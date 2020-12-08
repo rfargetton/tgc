@@ -1,5 +1,5 @@
 ---
-title: Hello Blog
-date: 2020-12-07
+title: "Hello Blog"
+date: "2020-12-07"
 ---
 Hello everyone ! Here is my first post on this amazing blog. Hope there's gonna be many more !
