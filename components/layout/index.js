@@ -11,6 +11,7 @@ export default function Layout({ children }) {
     <div>
       <Head>
         <title>{siteName}</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
 
       <header className={styles.header}>
