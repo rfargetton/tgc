@@ -9,18 +9,6 @@ import utilsStyles from "../styles/utils.module.css" ;
 
 export default function Home({ allPostsData }) {
 
-  useEffect(()=>{
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  },[])
-
   return (
     <Layout>
       <div className={utilsStyles.container}>
