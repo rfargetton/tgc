@@ -4,12 +4,13 @@ import Link from "next/link" ;
 import Date from "../components/date" ;
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts" ; 
+import utilsStyles from "../styles/utils.module.css" ;
 
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <h1>Hello Next</h1>
-      <div>
+      <div className={utilsStyles.container}>
+        <h1>NextJs and Netlify CMS Starter Blog</h1>
         <ul>
           {allPostsData.map(({id, date, title}) => (
             <li>
