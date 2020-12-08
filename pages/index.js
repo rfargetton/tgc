@@ -1,5 +1,6 @@
 import Head from "next/head" ;
 import Link from "next/link" ;
+import { useEffect } from "react" ;
 
 import Date from "../components/date" ;
 import Layout from "../components/layout";
@@ -7,6 +8,19 @@ import { getSortedPostsData } from "../lib/posts" ;
 import utilsStyles from "../styles/utils.module.css" ;
 
 export default function Home({ allPostsData }) {
+
+  useEffect(()=>{
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  },[])
+
   return (
     <Layout>
       <div className={utilsStyles.container}>
