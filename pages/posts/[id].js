@@ -6,6 +6,7 @@ import { getAllPostsId, getPostData } from "../../lib/posts" ;
 import utilsStyles from "../../styles/utils.module.css" ;
 
 export default function Post({postData}){
+  console.log(postData);
   return (
     <Layout>
       <Head>

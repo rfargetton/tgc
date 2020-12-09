@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
         <h1>NextJs and Netlify CMS Starter Blog</h1>
         <ul>
           {allPostsData.map(({id, date, title}) => (
-            <li>
+            <li key={id}>
               <Link href={`/posts/${id}`}>
                 <a>              
                   <h2>{title}</h2>
