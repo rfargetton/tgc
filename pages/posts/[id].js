@@ -1,4 +1,5 @@
 import Head from "next/head" ;
+import Image from "next/image" ;
 
 import Date from "../../components/date" ;
 import Layout from "../../components/layout" ;
@@ -14,6 +15,13 @@ export default function Post({postData}){
       </Head>
 
       <div className={utilsStyles.container}>
+        <div>
+          <Image 
+            src={postData.img}
+            width={500}
+            height={500}
+          />
+        </div>
         <h1>{postData.title}</h1>
         <Date dateString={postData.date} />
         <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
