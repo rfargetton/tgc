@@ -16,11 +16,7 @@ export default function Post({postData}){
 
       <div className={utilsStyles.container}>
         <div>
-          <Image 
-            src={postData.img}
-            width={500}
-            height={500}
-          />
+          <img src={postData.img}/>
         </div>
         <h1>{postData.title}</h1>
         <Date dateString={postData.date} />
