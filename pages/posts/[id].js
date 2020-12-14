@@ -1,5 +1,4 @@
 import Head from "next/head" ;
-import Image from "next/image" ;
 
 import Date from "../../components/date" ;
 import Layout from "../../components/layout" ;
