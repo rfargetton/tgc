@@ -22,6 +22,7 @@ collections:
         name: "general"
         file: "content/settings/general.md"
         fields:
+          - {}
           - {label: "Site Name", name: "site-name", widget: "string"}
-          - {label: "Description", name:"description", widget: "text"}
+          - {label: "Description", name: "description", widget: "text"}
 
