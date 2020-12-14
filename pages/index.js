@@ -5,14 +5,18 @@ import { useEffect } from "react" ;
 import Date from "../components/date" ;
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts" ; 
+import { getSettings } from "../lib/settings" ;
 import utilsStyles from "../styles/utils.module.css" ;
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, generalSettings }) {
+
+  console.log(generalSettings);
 
   return (
-    <Layout>
+    <Layout settings={generalSettings}>
       <div className={utilsStyles.container}>
-        <h1>NextJs and Netlify CMS Starter Blog</h1>
+        <h1>{generalSettings.siteName}</h1>
+        <p>{generalSettings.description}</p>
         <ul>
           {allPostsData.map(({id, date, title}) => (
             <li key={id}>
@@ -32,9 +36,11 @@ export default function Home({ allPostsData }) {
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
+  const generalSettings = await getSettings("general");
   return {
     props: {
-      allPostsData
+      allPostsData,
+      generalSettings
     }
   }
 }

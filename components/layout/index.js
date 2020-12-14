@@ -1,16 +1,15 @@
 import Head from "next/head" ;
 import Header from "../header" ;
 
-const siteName = "Blog Starter" ;
-
-export default function Layout({ children }) {
+export default function Layout({ children, settings }) {
   return (
     <div>
       <Head>
-        <title>{siteName}</title>
+        <title>{settings.siteName}</title>
+        <meta name="description" content={settings.description} />
       </Head>
 
-      <Header />
+      <Header siteName={settings.siteName}/>
 
       <main>
         {children}
