@@ -4,7 +4,6 @@ import settings from "../../config.json"
 import Date from "../../components/date" ;
 import Layout from "../../components/layout" ;
 import { getAllPostsId, getPostData } from "../../lib/posts" ;
-import { getSettings } from "../../lib/settings";
 import utilsStyles from "../../styles/utils.module.css" ;
 
 export default function Post({postData, generalSettings}){
@@ -37,12 +36,10 @@ export async function getStaticPaths(){
 
 export async function getStaticProps({params}){
   const postData = await getPostData(params.id);
-  const generalSettings = await getSettings("general");
 
   return {
     props: {
-      postData,
-      generalSettings
+      postData
     }
   }
 }
