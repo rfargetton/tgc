@@ -21,7 +21,7 @@ collections:
     files: 
       - label: "General"
         name: "general"
-        file: "content/settings/general.md"
+        file: "config.json"
         description: "General site settings"
         fields:
           - {label: "URL", name: "base_url", widget: "string", hint: "Do not enter trailing slash of the URL"}

@@ -13,7 +13,7 @@ export default function Home({ allPostsData, generalSettings }) {
   console.log(generalSettings);
 
   return (
-    <Layout settings={generalSettings}>
+    <Layout url="/">
       <div className={utilsStyles.container}>
         <h1>{generalSettings.siteName}</h1>
         <p>{generalSettings.description}</p>

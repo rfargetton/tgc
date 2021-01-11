@@ -1,4 +1,5 @@
 import Head from "next/head" ;
+import settings from "../../config.json"
 
 import Date from "../../components/date" ;
 import Layout from "../../components/layout" ;
@@ -11,7 +12,7 @@ export default function Post({postData, generalSettings}){
   return (
     <Layout settings={generalSettings}>
       <Head>
-        <title>{`${postData.title} | ${generalSettings.siteName}`}</title>
+        <title>{`${postData.title} | ${settings.siteName}`}</title>
       </Head>
 
       <div className={utilsStyles.container}>

@@ -3,7 +3,7 @@ import utilsStyles from "../../styles/utils.module.css" ;
 
 import Link from "next/link" ;
 
-export default function Header({ siteName }) {
+export default function Header({ site_name }) {
   return (
     <header className={styles.header}>
       <nav className={`${styles.container} ${utilsStyles.container}`}>
