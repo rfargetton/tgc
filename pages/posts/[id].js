@@ -11,7 +11,7 @@ export default function Post({postData, generalSettings}){
   return (
     <Layout settings={generalSettings}>
       <Head>
-        <title>{`${postData.title} | ${settings.siteName}`}</title>
+        <title>{`${postData.title} | ${settings.site_name}`}</title>
       </Head>
 
       <div className={utilsStyles.container}>
