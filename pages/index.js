@@ -1,22 +1,22 @@
 import Head from "next/head" ;
 import Link from "next/link" ;
 import { useEffect } from "react" ;
+import settings from "../config.json" ;
 
 import Date from "../components/date" ;
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts" ; 
-import { getSettings } from "../lib/settings" ;
 import utilsStyles from "../styles/utils.module.css" ;
 
-export default function Home({ allPostsData, generalSettings }) {
+export default function Home({ allPostsData }) {
 
-  console.log(generalSettings);
+  console.log(settings);
 
   return (
     <Layout url="/">
       <div className={utilsStyles.container}>
-        <h1>{generalSettings.siteName}</h1>
-        <p>{generalSettings.description}</p>
+        <h1>{settings.site_name}</h1>
+        <p>{settings.description}</p>
         <ul>
           {allPostsData.map(({id, date, title}) => (
             <li key={id}>
@@ -36,11 +36,9 @@ export default function Home({ allPostsData, generalSettings }) {
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
-  const generalSettings = await getSettings("general");
   return {
     props: {
-      allPostsData,
-      generalSettings
+      allPostsData
     }
   }
 }
