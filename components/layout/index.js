@@ -2,13 +2,43 @@ import Head from "next/head" ;
 import Header from "../header" ;
 import settings from "../../config.json"
 
-export default function Layout({ children, url }) {
+export default function Layout({ children, url, title, description, image }) {
   return (
     <div>
       <Head>
-        <title>{settings.site_name}</title>
-        <meta name="description" content={settings.description} />
+        <title>
+          {title ? `${title} | ${settings.site_name}` : settings.site_name}
+        </title>
+        <meta 
+          name="description" 
+          content={description ? description : settings.description} 
+        />
         <link rel="canonical" href={settings.base_url + url} />
+
+        <meta 
+          property="og:site_name" 
+          content={settings.site_name}
+        />
+        <meta 
+          properry="og:title"
+          content={title ? `${title} | ${settings.site_name}` : ""}
+        />
+        <meta 
+          properry="og:description"
+          content={description ? description : settings.description}
+        />
+        <meta 
+          property="og:url" 
+          content={settings.base_url + url} 
+        />  
+        <meta 
+          property="og:type" 
+          content="article" 
+        />       
+        <meta 
+          property="og:image" 
+          content={image ? settings.base_url + image : settings.base_url + "/images/og_image.png"} 
+        />
       </Head>
 
       <Header siteName={settings.site_name}/>

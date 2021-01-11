@@ -6,13 +6,14 @@ import Layout from "../../components/layout" ;
 import { getAllPostsId, getPostData } from "../../lib/posts" ;
 import utilsStyles from "../../styles/utils.module.css" ;
 
-export default function Post({postData, generalSettings}){
+export default function Post({postData}){
   console.log(postData);
   return (
-    <Layout settings={generalSettings}>
-      <Head>
-        <title>{`${postData.title} | ${settings.site_name}`}</title>
-      </Head>
+    <Layout 
+      url={`/posts/${postData.id}`}
+      title={postData.title}
+      image={postData.img}
+    >
 
       <div className={utilsStyles.container}>
         <div>
