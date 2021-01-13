@@ -13,7 +13,10 @@ export default function Home({ allPostsData }) {
   console.log(settings);
 
   return (
-    <Layout url="/">
+    <Layout 
+      url="/"
+      title="Next.js + NetlifyCMS, a simple starter for making a blog with Next.js and NetlifyCMS"
+    >
       <div className={utilsStyles.container}>
         <h1>{settings.site_name}</h1>
         <p>{settings.description}</p>

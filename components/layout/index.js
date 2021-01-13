@@ -7,24 +7,27 @@ export default function Layout({ children, url, title, description, image }) {
     <div>
       <Head>
         <title>
-          {title ? `${title} | ${settings.site_name}` : settings.site_name}
+          {title ? title : settings.site_name}
         </title>
         <meta 
           name="description" 
           content={description ? description : settings.description} 
         />
-        <link rel="canonical" href={settings.base_url + url} />
+        <link 
+          rel="canonical" 
+          href={settings.base_url + url} 
+        />
 
         <meta 
           property="og:site_name" 
           content={settings.site_name}
         />
         <meta 
-          properry="og:title"
+          property="og:title"
           content={title ? `${title} | ${settings.site_name}` : ""}
         />
         <meta 
-          properry="og:description"
+          property="og:description"
           content={description ? description : settings.description}
         />
         <meta 

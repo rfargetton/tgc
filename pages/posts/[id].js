@@ -11,8 +11,9 @@ export default function Post({postData}){
   return (
     <Layout 
       url={`/posts/${postData.id}`}
-      title={postData.title}
+      title={`${postData.title} | ${settings.site_name}`}
       image={postData.img}
+      description="Some description text"
     >
 
       <div className={utilsStyles.container}>
