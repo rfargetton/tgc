@@ -15,6 +15,29 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Featured Image", name: "featured_image", widget: "image", default: "/images/default.jpg"}
+      
+  - name: "pages"
+    label: "pages"
+    files:
+    - label: "Home"
+      name: "home"
+      file: "content/pages/home.md"
+        - { name: "title", label: "title", widget: "string", default: "Home" }
+        - { name: "heading", label: "Heading" }
+        - { name: "subheading", label: "Subheading", widget: "text"  }
+    - label: "About"
+      name: "about"
+      file: "content/pages/about.md"
+        - { name: "title", label: "title", widget: "string", default: "About" }
+        - { name: "heading", label: "Heading" }
+        - { name: "subheading", label: "Subheading", widget: "text"  }
+    - label: "Contact"
+      name: "contact"
+      file: "content/pages/contact.md"
+        - { name: "title", label: "title", widget: "string", default: "Contact" }
+        - { name: "heading", label: "Heading" }
+        - { name: "subheading", label: "Subheading", widget: "text"  }
+
   - name: "settings"
     label: "Settings"
     delete: false
