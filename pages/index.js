@@ -1,25 +1,26 @@
 import Head from "next/head" ;
 import Link from "next/link" ;
 import { useEffect } from "react" ;
-import settings from "../config.json" ;
 
 import Date from "../components/date" ;
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts" ; 
+import { getPage } from "../lib/pages" ;
 import utilsStyles from "../styles/utils.module.css" ;
+import settings from "../config.json" ;
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, pageData }) {
 
-  console.log(settings);
+  console.log(pageData);
 
   return (
     <Layout 
       url="/"
-      title="Next.js + NetlifyCMS, a simple starter for making a blog with Next.js and NetlifyCMS"
+      title={pageData.title}
     >
       <div className={utilsStyles.container}>
-        <h1>{settings.site_name}</h1>
-        <p>{settings.description}</p>
+        <h1>{pageData.heading}</h1>
+        <p>{pageData.subheading}</p>
         <ul>
           {allPostsData.map(({id, date, title}) => (
             <li key={id}>
@@ -39,9 +40,11 @@ export default function Home({ allPostsData }) {
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
+  const pageData = await getPage("/home.md");
   return {
     props: {
-      allPostsData
+      allPostsData,
+      pageData
     }
   }
 }
