@@ -40,7 +40,7 @@ export default function Home({ allPostsData, pageData }) {
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
-  const pageData = await getPage("/home.md");
+  const pageData = await getPage("/home");
   return {
     props: {
       allPostsData,

@@ -1,8 +1,6 @@
 ---
 title: Hello Blog
-date: 2020-12-07
+date: 2021-01-17T08:27:44.686Z
 featured_image: /images/default.jpg
 ---
-![some css code](/images/uploads/css-text-decoration-long-hand.png)
-
-Hello everyone ! Here is my first post on this amazing blog.
+This is my first post here !
