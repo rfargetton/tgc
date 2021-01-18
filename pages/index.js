@@ -1,13 +1,10 @@
-import Head from "next/head" ;
 import Link from "next/link" ;
-import { useEffect } from "react" ;
 
 import Date from "../components/date" ;
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts" ; 
 import { getPage } from "../lib/pages" ;
 import utilsStyles from "../styles/utils.module.css" ;
-import settings from "../config.json" ;
 
 export default function Home({ allPostsData, pageData }) {
 
