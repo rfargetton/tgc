@@ -3,7 +3,7 @@ import settings from "../../config.json"
 
 import Date from "../../components/date" ;
 import Layout from "../../components/layout" ;
-import { getAllPostsId, getPostData } from "../../lib/posts" ;
+import { getAllFilesId, getFileData } from "../../lib/folder" ;
 import utilsStyles from "../../styles/utils.module.css" ;
 
 export default function Post({postData}){
@@ -29,7 +29,7 @@ export default function Post({postData}){
 }
 
 export async function getStaticPaths(){
-  const paths = await getAllPostsId();
+  const paths = await getAllFilesId("posts");
   return {
     paths,
     fallback: false
@@ -37,7 +37,7 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps({params}){
-  const postData = await getPostData(params.id);
+  const postData = await getFileData("posts", params.id);
 
   return {
     props: {

@@ -1,28 +1,22 @@
-import Link from "next/link" ;
+import Link from "next/link";
 
-import Date from "../components/date" ;
+import Date from "../components/date";
 import Layout from "../components/layout";
-import { getSortedPostsData } from "../lib/posts" ; 
-import { getPage } from "../lib/pages" ;
-import utilsStyles from "../styles/utils.module.css" ;
+import { getAllFilesData } from "../lib/folder";
+import { getFile } from "../lib/file";
+import utilsStyles from "../styles/utils.module.css";
 
 export default function Home({ allPostsData, pageData }) {
-
-  console.log(pageData);
-
   return (
-    <Layout 
-      url="/"
-      title={pageData.title}
-    >
+    <Layout url="/" title={pageData.title}>
       <div className={utilsStyles.container}>
         <h1>{pageData.heading}</h1>
         <p>{pageData.subheading}</p>
         <ul>
-          {allPostsData.map(({id, date, title}) => (
+          {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
               <Link href={`/posts/${id}`}>
-                <a>              
+                <a>
                   <h2>{title}</h2>
                   <Date dateString={date} />
                 </a>
@@ -32,16 +26,16 @@ export default function Home({ allPostsData, pageData }) {
         </ul>
       </div>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allPostsData = await getSortedPostsData();
-  const pageData = await getPage("/home");
+  const allPostsData = await getAllFilesData("posts");
+  const pageData = await getFile("pages", "home");
   return {
     props: {
       allPostsData,
-      pageData
-    }
-  }
+      pageData,
+    },
+  };
 }

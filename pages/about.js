@@ -1,8 +1,5 @@
-import Link from "next/link" ;
-
-import Date from "../components/date" ;
 import Layout from "../components/layout";
-import { getPage } from "../lib/pages" ;
+import { getFile } from "../lib/file" ;
 import utilsStyles from "../styles/utils.module.css" ;
 
 export default function About({ pageData }){
@@ -24,7 +21,7 @@ export default function About({ pageData }){
 }
 
 export async function getStaticProps(){
-  const pageData = await getPage("/about");
+  const pageData = await getFile("pages", "about");
 
   return {
     props: {
