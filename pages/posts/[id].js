@@ -3,7 +3,6 @@ import settings from "../../config.json";
 import Date from "../../components/date";
 import Layout from "../../components/layout";
 import { getAllFilesId, getFileData } from "../../lib/folder";
-import utilsStyles from "../../styles/utils.module.css";
 
 export default function Post({ postData }) {
   return (
@@ -13,7 +12,7 @@ export default function Post({ postData }) {
       image={postData.img}
       description="Some description text"
     >
-      <div className={utilsStyles.container}>
+      <div>
         <div>
           <img src={postData.img} />
         </div>
