@@ -4,14 +4,18 @@ import Date from "../components/date";
 import Layout from "../components/layout";
 import { getAllFilesData } from "../lib/folder";
 import { getFile } from "../lib/file";
-import utilsStyles from "../styles/utils.module.css";
+import Hero from "../components/hero";
 
 export default function Home({ allPostsData, pageData }) {
   return (
     <Layout url="/" title={pageData.title}>
-      <div className={utilsStyles.container}>
-        <h1>{pageData.heading}</h1>
-        <p>{pageData.subheading}</p>
+      <div>
+        <Hero
+          heading={pageData.heading}
+          subheading={pageData.subheading}
+          image={pageData.image}
+        />
+
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
