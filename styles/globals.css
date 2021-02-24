@@ -1,3 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply p-2 rounded-lg text-center font-bold bg-gray-600 text-white text-base hover:bg-gray-900;
+  }
+  h1 {
+    @apply font-bold text-3xl lg:text-5xl leading-tight lg:leading-tight;
+  }
+}
+
+@layer utilities {
+  .md-hidden {
+    @apply block md:hidden;
+  }
+  .sm-hidden {
+    @apply hidden md:block;
+  }
+}
+
+
 html,
 body {
   padding: 0;
@@ -17,3 +40,5 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
