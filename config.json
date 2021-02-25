@@ -1,5 +1,6 @@
 {
   "base_url": "https://www.sitename.com",
   "site_name": "Next.js + NetlifyCMS",
-  "description": "A simple starter template for a blog, using Next.js and NetlifyCMS"
+  "description": "A simple starter template for a blog, using Next.js and NetlifyCMS",
+  "logo": "/images/logo.svg"
 }
