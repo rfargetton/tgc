@@ -53,4 +53,5 @@ collections:
           - {label: "URL", name: "base_url", widget: "string", hint: "Do not enter trailing slash of the URL"}
           - {label: "Site Name", name: "site_name", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
+          - {label: "Logo", name: "logo", widget: "image"}
 
