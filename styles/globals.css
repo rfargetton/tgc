@@ -7,7 +7,13 @@
     @apply p-2 rounded-lg text-center font-bold bg-gray-600 text-white text-base hover:bg-gray-900;
   }
   h1 {
-    @apply font-bold text-3xl lg:text-5xl leading-tight lg:leading-tight;
+    @apply font-bold text-4xl lg:text-5xl leading-tight lg:leading-tight;
+  }
+  h2 {
+    @apply font-bold text-2xl lg:text-4xl leading-tight lg:leading-tight;
+  }
+  h3 {
+    @apply font-bold text-xl lg:text-3xl leading-tight lg:leading-tight;
   }
 }
 

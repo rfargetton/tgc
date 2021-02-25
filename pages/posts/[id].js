@@ -2,6 +2,7 @@ import settings from "../../config.json";
 
 import Date from "../../components/date";
 import Layout from "../../components/layout";
+import Hero from "../../components/hero";
 import { getAllFilesId, getFileData } from "../../lib/folder";
 
 export default function Post({ postData }) {
@@ -12,14 +13,12 @@ export default function Post({ postData }) {
       image={postData.img}
       description="Some description text"
     >
-      <div>
-        <div>
-          <img src={postData.img} />
-        </div>
+      <Hero
+        image={postData.img}
+      >
         <h1>{postData.title}</h1>
         <Date dateString={postData.date} />
-        <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
-      </div>
+      </Hero>
     </Layout>
   );
 }
