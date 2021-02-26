@@ -1,5 +1,6 @@
 import Head from "next/head" ;
-import Header from "../header" ;
+import Header from "../header";
+import Footer from "../footer";
 import settings from "../../config.json"
 
 export default function Layout({ children, url, title, description, image }) {
@@ -49,9 +50,8 @@ export default function Layout({ children, url, title, description, image }) {
       <main>
         {children}
       </main>
-      <footer>
-
-      </footer>
+      
+      <Footer />
     </div>
   )
 }

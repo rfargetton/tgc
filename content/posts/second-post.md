@@ -1,7 +1,7 @@
 ---
-title: Hello Blog
-date: 2021-02-25T08:27:44.686Z
-featured_image: /images/sr-71.jpg
+title: Second Post
+date: 2021-01-17T08:27:44.686Z
+featured_image: /images/rivers.jpg
 ---
 
 ## Sodales potenti tempor praesent justo maecenas ante odio fringil

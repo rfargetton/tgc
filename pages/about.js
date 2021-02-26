@@ -4,7 +4,7 @@ import { getFile } from "../lib/file";
 
 export default function About({ pageData }) {
   return (
-    <Layout url={"/about"} title={pageData.title}>
+    <Layout url="/about" title={pageData.title}>
       <PageHeader>
         <h1>{pageData.heading}</h1>
         <p>{pageData.subheading}</p>        
