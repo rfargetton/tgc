@@ -14,7 +14,7 @@ export default function About({ pageData }) {
 }
 
 export async function getStaticProps() {
-  const pageData = await getFile("pages", "about");
+  const pageData = await getFile("pages", "a-propos");
 
   return {
     props: {
