@@ -1,6 +1,5 @@
 import settings from "../../config.json";
 
-import Date from "../../components/date";
 import Layout from "../../components/layout";
 import Hero from "../../components/hero";
 import PostContent from "../../components/post-content";
@@ -18,7 +17,6 @@ export default function Post({ postData }) {
         image={postData.img}
       >
         <h1>{postData.title}</h1>
-        <Date dateString={postData.date} />
       </Hero>
 
       <PostContent htmlContent={postData.htmlContent} />
@@ -27,7 +25,7 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = await getAllFilesId("posts");
+  const paths = await getAllFilesId("parcours");
   return {
     paths,
     fallback: false,
@@ -35,7 +33,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getFileData("posts", params.id);
+  const postData = await getFileData("parcours", params.id);
 
   return {
     props: {

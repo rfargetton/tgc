@@ -2,11 +2,10 @@ import Link from "next/link";
 import {ArrowRight} from "react-feather";
 import Image from "next/image";
 
-import Date from "../date";
 import Container from "../container";
 import Card from "../card";
 
-export default function PostList({ posts, children }) {
+export default function RouteList({ routes, children }) {
   return (
     <div className="my-8">
       <Container>
@@ -14,22 +13,22 @@ export default function PostList({ posts, children }) {
           {children}
         </div>
         <div>
-          <ul className="grid grid-cols-2 gap-4 list-none">
-            {posts.map((post) => (
-              <li key={post.id}>
+          <ul className="list-none flex flex-col md:flex-row -m-2">
+            {routes.map((route) => (
+              <li className="w-full md:w-1/2 m-2" key={route.id}>
                 <Card>
-                  <div className="p-4">
-                    <div className="h-48 w-full relative rounded-xl overflow-hidden">
-                      <Image 
-                        src={post.img}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <div className="mt-4">
-                      <h3>{post.title}</h3>
-                      <Date dateString={post.date} />
-                      <Link href={`/posts/${post.id}`}>
+                  <div className="h-72 w-full relative">
+                    <Image 
+                      src={route.image}
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
+                  <div className="p-4 relative z-50">
+                    <div>
+                      <h3 className="mt-0">{route.title}</h3>
+                      <p>{route.description}</p>
+                      <Link href={route.link}>
                         <a>
                           <div className="flex justify-between text-blue-700 items-center mt-4">
                             <div>Read More</div>

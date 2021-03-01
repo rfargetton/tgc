@@ -2,9 +2,9 @@
 import { getFile } from "../lib/file";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import PostList from "../components/post-list";
+import RouteList from "../components/route-list";
 
-export default function Home({ allPostsData, pageData }) {
+export default function Home({ allRoutesData, pageData }) {
   return (
     <Layout url="/" title={pageData.title}>
       <div>
@@ -15,20 +15,20 @@ export default function Home({ allPostsData, pageData }) {
           <h1>{pageData.heading}</h1>
         </Hero>
 
-        <PostList posts={allPostsData}>
-          <h2>Recent Posts</h2>
-        </PostList>
+        <RouteList routes={allRoutesData}>
+          <h2>Les parcours</h2>
+        </RouteList>
       </div>
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const allPostsData = await getAllFilesData("posts");
+  const allRoutesData = await getAllFilesData("parcours");
   const pageData = await getFile("pages", "home");
   return {
     props: {
-      allPostsData,
+      allRoutesData,
       pageData,
     },
   };
