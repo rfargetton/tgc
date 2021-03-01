@@ -6,15 +6,26 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/posts"
+  - name: "parcours"
+    label: "Parcours"
+    folder: "content/parcours"
     create: true
     fields: 
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Featured Image", name: "featured_image", widget: "image", default: "/images/default.jpg"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", default: "/images/default.jpg"}
+      - {label: "Distance", name: "distance", widget: "number", hint: "distance du parcours en kilomètres"}
+      - {label: "Dénivelé", name: "elevation", widget: "number", hint: "dénivelé positif du parcours en mètres"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Lien", name: "link"}
+    
+  - name: "partenaires"
+    label: "Partenaires"
+    folder: "content/partenaires"
+    create: true
+    fields:
+      - {label: "Titre", name: "title"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Lien", name: "link"}
 
   - name: "pages"
     label: "Pages"
@@ -23,23 +34,70 @@ collections:
         name: "home"
         file: content/pages/home.md
         fields:
-          - { name: "title", label: "title", widget: "string", default: "Home" }
-          - { name: "heading", label: "Heading" }
-          - { name: "subheading", label: "Subheading", widget: "text"  }
-      - label: "About"
-        name: "about"
-        file: content/pages/about.md
+          - { name: "title", label: "Titre", widget: "string", default: "Home" }
+          - { name: "heading", label: "Accroche" }
+          - { name: "subheading", label: "Sous-Texte", widget: "text"  }
+          - name: "gallery"
+            label: "Galerie"
+            widget: "list"
+            field: {label: "Image", name: "image", widget: "image"}
+      - label: "Événement"
+        name: "evenement"
+        file: content/pages/evenement.md
         fields:
-          - { name: "title", label: "title", widget: "string", default: "About" }
-          - { name: "heading", label: "Heading" }
-          - { name: "subheading", label: "Subheading", widget: "text"  }
+          - { name: "title", label: "Titre", widget: "string", default: "Événement" }
+          - { name: "heading", label: "Accroche" }
+          - { name: "subheading", label: "Sous-Texte", widget: "text" }
+          - name: "concept_blocks"
+            label: "blocs Esprit TGC"
+            widget: "list"
+            fields:
+              - {name: "title", label: "Titre"}
+              - {name: "description", label: "Description", widget: "text"}
+              - {name: "image", label: "Image", widget: "image"}
+          - name: "options"
+            label: "Options"
+            widget: "list"
+            fields: 
+              - {name: "description", label: "Descriptif", hint: "Descriptif de l'option"}
+              - {name: "price", label: "Tarif", widget: "number", hint: "Tarif en euros de l'option"}
+          - name: "basic_features"
+            label: "Inclus dans la tarification de base"
+            widget: "list"
+            field: {name: "description", label: "Descriptif"}
+          - name: "plus_features"
+            label: "Inclus dans la tarification supérieure"
+            widget: "list"
+            field: {name: "description", label: "Descriptif"}
+      - label: "À Propos"
+        name: "a-propos"
+        file: content/pages/a-propos.md
+        fields:
+          - { name: "title", label: "Titre", widget: "string", default: "About" }
+          - { name: "heading", label: "Accroche" }
+          - { name: "subheading", label: "Sous-Texte", widget: "text"  }
+          - name: "team"
+            label: "équipe"
+            widget: "list"
+            fields:
+              - {name: "name", label: "Nom"}
+              - {name: "bio", label: "Bio", widget: "text"}
+              - {name: "image", label: "image", widget: "image"}
+          - name: "press"
+            label: "Presse"
+            widget: "list"
+            fields:
+              - {name: "title", label: "Titre", hint: "titre de l'article"}
+              - {name: "image", label: "Image", widget: "image"}
+              - {name: "publication", label: "Publication", hint: "nom de la publication. ex: La nouvelle république"}
+              - {name: "link", label: "Lien", hint: "lien vesr l'article"}
       - label: "Contact"
         name: "contact"
         file: content/pages/contact.md
         fields:
-          - { name: "title", label: "title", widget: "string", default: "Contact" }
-          - { name: "heading", label: "Heading" }
-          - { name: "subheading", label: "Subheading", widget: "text"  }
+          - { name: "title", label: "Titre", widget: "string", default: "Contact" }
+          - { name: "heading", label: "Accroche" }
+          - { name: "subheading", label: "Sous-Texte", widget: "text"  }
 
   - name: "settings"
     label: "Settings"
@@ -54,4 +112,6 @@ collections:
           - {label: "Site Name", name: "site_name", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Facebook", name: "facebook_link"}
+          - {label: "Komoot", name: "komoot_link"}
 
