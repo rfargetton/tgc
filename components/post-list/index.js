@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {ArrowRight} from "react-feather";
+import Image from "next/image";
 
 import Date from "../date";
 import Container from "../container";
@@ -18,7 +19,13 @@ export default function PostList({ posts, children }) {
               <li key={post.id}>
                 <Card>
                   <div className="p-4">
-                    <img className="rounded-lg h-48 w-full object-cover" src={post.img} />
+                    <div className="h-48 w-full relative rounded-xl overflow-hidden">
+                      <Image 
+                        src={post.img}
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
                     <div className="mt-4">
                       <h3>{post.title}</h3>
                       <Date dateString={post.date} />

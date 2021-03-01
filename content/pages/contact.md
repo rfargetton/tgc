@@ -1,5 +1,5 @@
 ---
-title: About
-heading: Contact us
+title: Contact
+heading: Contactez nous
 subheading: Tell us how we can help you 
 ---

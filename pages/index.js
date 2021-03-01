@@ -1,4 +1,4 @@
-import { getAllFilesData } from "../lib/folder";
+  import { getAllFilesData } from "../lib/folder";
 import { getFile } from "../lib/file";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
@@ -8,9 +8,11 @@ export default function Home({ allPostsData, pageData }) {
   return (
     <Layout url="/" title={pageData.title}>
       <div>
-        <Hero image={pageData.image}>
+        <Hero 
+          image={pageData.image}
+          intro={pageData.subheading}
+        >
           <h1>{pageData.heading}</h1>
-          <p>{pageData.subheading}</p>
         </Hero>
 
         <PostList posts={allPostsData}>
