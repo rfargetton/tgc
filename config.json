@@ -1,6 +1,6 @@
 {
-  "base_url": "https://www.sitename.com",
-  "site_name": "Next.js + NetlifyCMS",
-  "description": "A simple starter template for a blog, using Next.js and NetlifyCMS",
+  "base_url": "https://www.tourainegravelchallenge.fr",
+  "site_name": "Touraine Gravel Challenge",
+  "description": "Du pur gravel en Touraine. Une épreuve, deux parcours.",
   "logo": "/images/logo.svg"
 }

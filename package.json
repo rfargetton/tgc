@@ -1,5 +1,6 @@
 {
-  "name": "nextjs-netlifycms",
+  "name": "tourainegravelchallenge.com",
+  "description": "website for touraine gravel challenge event",
   "version": "0.1.0",
   "private": true,
   "scripts": {
