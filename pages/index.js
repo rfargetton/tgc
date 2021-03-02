@@ -12,7 +12,7 @@ export default function Home({ allRoutesData, pageData }) {
         <Hero 
           image={pageData.image}
           intro={pageData.subheading}
-          bgColor="feuillage"
+          bgColor="automne"
         >
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
           <InfoCard date={pageData.date} edition={pageData.edition} location={pageData.location} />
