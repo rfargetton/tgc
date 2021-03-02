@@ -6,7 +6,7 @@ const colors = require('tailwindcss/colors');
   theme: {
     colors: {
       transparent: "transparent",
-      asphalte: "#242c31",
+      asphalte: "#343C41",
       automne: "#DD773B",
       feuillage: "#474C33",
       gravier: {

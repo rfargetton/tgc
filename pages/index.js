@@ -16,7 +16,7 @@ export default function Home({ allRoutesData, pageData }) {
         </Hero>
 
         <RouteList routes={allRoutesData}>
-          <h2 className="bg-automne px-4 py-2 inline">Les parcours</h2>
+          <h2 className="bg-automne px-4 py-2 inline shadow-lg">Les parcours</h2>
         </RouteList>
       </div>
     </Layout>
