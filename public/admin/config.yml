@@ -37,6 +37,9 @@ collections:
           - { name: "title", label: "Titre", widget: "string", default: "Home" }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text"  }
+          - { name: "edition", label: "Edition", widget: "number", hint: "numéro de l'edition"}
+          - { name: "location", label: "Lieu", hint: "Lieu ou se déroule l'événement"}
+          - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", hint: "Date de l'événement"}
           - name: "gallery"
             label: "Galerie"
             widget: "list"

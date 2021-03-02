@@ -7,9 +7,9 @@ import Card from "../card";
 
 export default function RouteList({ routes, children }) {
   return (
-    <div className="my-8">
+    <div className="z-20 relative my-20">
       <Container>
-        <div className="py-4 w-full md:w-8/12 mx-auto text-center">
+        <div className="mb-16 w-full md:w-8/12 mx-auto text-center">
           {children}
         </div>
         <div>

@@ -1,6 +1,7 @@
-import { parseJSON, format } from "date-fns";
+import { parseISO, format } from "date-fns";
+import fr from "date-fns/locale/fr";
 
 export default function Date({ dateString }) {
-  const date = parseJSON(dateString);
-  return <time className="text-sm text-gray-600" dateTime={dateString}>{format(date, "LLLL d, yyyy")}</time>;
+  const date = parseISO(dateString);
+  return <time dateTime={dateString}>{format(date, "dd MMMM yyyy", {locale: fr})}</time>;
 }
