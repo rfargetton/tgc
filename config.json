@@ -1,9 +1,11 @@
 {
   "base_url": "https://www.tourainegravelchallenge.fr",
   "site_name": "Touraine Gravel Challenge",
-  "description": "Du pur gravel en Touraine. Une épreuve, deux parcours.",
   "logo": "/images/logo.svg",
-  "edition": 2,
+  "komoot_link": "https://www.komoot.com/",
+  "date": "2021-09-12",
+  "facebook_link": "https://www.facebook.com/Touraine-gravel-challenge-102492681530119/",
   "location": "Tours, France",
-  "date": "2021-09-11"
+  "description": "Du pur gravel en Touraine. Une épreuve, deux parcours.",
+  "edition": 2
 }
