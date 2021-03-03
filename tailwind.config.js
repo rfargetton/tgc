@@ -7,7 +7,10 @@ const colors = require('tailwindcss/colors');
     colors: {
       transparent: "transparent",
       asphalte: "#343C41",
-      automne: "#DD773B",
+      automne: {
+        DEFAULT: "#DD773B",
+        dark: "#C16834 "
+      },
       feuillage: "#474C33",
       gravier: {
         light: "#ECD8B6",

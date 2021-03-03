@@ -4,7 +4,7 @@
 
 @layer base {
   .btn {
-    @apply px-4 py-2 rounded-lg text-center font-bold bg-automne text-white text-lg hover:bg-gray-900;
+    @apply px-4 py-2 rounded-lg text-center font-bold bg-automne text-white text-lg hover:bg-automne-dark transition;
   }
   p {
     @apply my-2;
