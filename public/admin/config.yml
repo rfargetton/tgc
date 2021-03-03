@@ -37,9 +37,6 @@ collections:
           - { name: "title", label: "Titre", widget: "string", default: "Home" }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text"  }
-          - { name: "edition", label: "Edition", widget: "number", hint: "numéro de l'edition"}
-          - { name: "location", label: "Lieu", hint: "Lieu ou se déroule l'événement"}
-          - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", hint: "Date de l'événement"}
           - name: "gallery"
             label: "Galerie"
             widget: "list"
@@ -103,7 +100,7 @@ collections:
           - { name: "subheading", label: "Sous-Texte", widget: "text"  }
 
   - name: "settings"
-    label: "Settings"
+    label: "Parametres"
     delete: false
     files: 
       - label: "General"
@@ -117,4 +114,7 @@ collections:
           - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Facebook", name: "facebook_link"}
           - {label: "Komoot", name: "komoot_link"}
+          - { name: "edition", label: "Edition", widget: "number", hint: "numéro de l'edition"}
+          - { name: "location", label: "Lieu", hint: "Lieu ou se déroule l'événement"}
+          - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", hint: "Date de l'événement"}
 

@@ -15,7 +15,7 @@ export default function Home({ allRoutesData, pageData }) {
           bgColor="feuillage"
         >
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
-          <InfoCard date={pageData.date} edition={pageData.edition} location={pageData.location} />
+          <InfoCard />
         </Hero>
 
         <RouteList routes={allRoutesData}>

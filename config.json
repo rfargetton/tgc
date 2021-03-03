@@ -2,5 +2,8 @@
   "base_url": "https://www.tourainegravelchallenge.fr",
   "site_name": "Touraine Gravel Challenge",
   "description": "Du pur gravel en Touraine. Une épreuve, deux parcours.",
-  "logo": "/images/logo.svg"
+  "logo": "/images/logo.svg",
+  "edition": 2,
+  "location": "Tours, France",
+  "date": "2021-09-11"
 }
