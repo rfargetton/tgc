@@ -4,8 +4,12 @@ import Layout from "../components/layout";
 import Hero from "../components/hero";
 import RouteList from "../components/route-list";
 import InfoCard from "../components/info-card";
+import Gallery from "../components/gallery";
 
 export default function Home({ allRoutesData, pageData }) {
+
+  console.log(pageData);
+
   return (
     <Layout url="/" title={pageData.title}>
       <div>
@@ -19,8 +23,11 @@ export default function Home({ allRoutesData, pageData }) {
         </Hero>
 
         <RouteList routes={allRoutesData}>
-          <h2 className="bg-automne px-4 py-2 inline shadow-lg">Les parcours</h2>
+          <h2 className="text-center"><span className="bg-automne p-3 shadow-lg">Les parcours</span></h2>
         </RouteList>
+
+        <Gallery images={pageData.gallery} />
+
       </div>
     </Layout>
   );

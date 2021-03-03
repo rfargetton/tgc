@@ -31,12 +31,15 @@
   .unreset > ul {
     @apply list-outside list-disc ml-4;
   }
-  .hero-image {
-    height: 32rem;
-  }
 }
 
 @layer utilities {
+  .h-136 {
+    height: 32rem;
+  }
+  .w-136 {
+    width: 32rem;
+  }
   .md-hidden {
     @apply block md:hidden;
   }
