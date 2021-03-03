@@ -10,7 +10,7 @@ export default function RouteList({ routes, children }) {
     <section>
       <div className="mb-40 mt-10 relative z-20">
         <Container>
-          <div className="p-3 md:p-6 overflow-hidden">
+          <div className="p-3 md:p-6">
             {children}
           </div>
           <div className="p-3 md:p-6">

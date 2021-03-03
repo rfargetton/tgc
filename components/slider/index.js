@@ -42,9 +42,9 @@ export default function Slider({images}){
           <ArrowRight />
         </div>        
       </div>
-      <ul style={ulStyle} className="flex transition duration-500">
+      <ul style={ulStyle} className="w-full pt-10 flex transition duration-500">
         {images.map((image, index) => (
-          <Slide image={image} active={index === activeSlide} handleClick={() => {displayIndex(index)}} />
+          <Slide key={image} image={image} active={index === activeSlide} handleClick={() => {displayIndex(index)}} />
         ))}
       </ul>
     </div>
