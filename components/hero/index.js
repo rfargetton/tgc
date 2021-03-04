@@ -5,8 +5,8 @@ import Container from "../container";
 export default function Hero({image, intro, children, bgColor}){
 
   return (
-    <section>
-      <div className={`text-gravier-light pt-20 ${bgColor === "feuillage" ? "bg-feuillage" : "bg-asphalte"}`}>
+    <section className="-mb-32">
+      <div className={`text-gravier-light pt-20   ${bgColor === "feuillage" ? "bg-feuillage" : "bg-asphalte"}`}>
         <Container>
           <div className="relative">
             <div className="p-6 block md:absolute z-20 h-full w-full md:w-10/12 flex flex-col justify-center items-start">
