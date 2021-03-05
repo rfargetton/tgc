@@ -30,11 +30,11 @@ export default function About({ pageData, allRoutesData }) {
         </RouteList>
 
         <Infos>
-          <div className="px-3 md:px-6">
+          <div>
             <h3 className="text-automne">Tarifs d’inscription</h3>
           </div>
           <PricesList description="Pour chacun des parcours, deux options s’offrent à toi :" options={pageData.options} />
-          <div className="px-3 md:px-6">
+          <div>
             <h3 className="text-automne">Que comprends mon inscription ?</h3>
           </div>
           <FeaturesList description="Pour chacune des tarifications, ton inscription comprends" features={pageData.basic_features} />

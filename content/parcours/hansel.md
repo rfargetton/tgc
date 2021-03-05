@@ -1,7 +1,7 @@
 ---
 title: Hansel
 image: /images/uploads/galerie-photos-2.jpg
-distance: 168
+distance: 170
 elevation: 1200
 description: "Le mot challenge ici n'est pas usurpé ! Il te faudra entre 8 et 11
   heures pour venir à bout de ce parcours. Cette randonnée est destinée aux

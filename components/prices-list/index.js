@@ -1,7 +1,7 @@
 export default function PricesList({description, options}){
   return (
     <div className="my-6">
-      <div className="p-3 md:p-6 flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/3 mb-4">
           <div className="text-base md:text-lg font-medium">{description}</div>
         </div>

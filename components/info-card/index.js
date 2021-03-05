@@ -23,7 +23,7 @@ export default function InfoCard({edition, location, date}){
           </div>
 
           <div className="btn ">
-            <a>S'inscrire</a>
+            <a href={settings.register_link}>S'inscrire</a>
           </div>
         </div>
       </Card>
