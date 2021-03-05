@@ -32,13 +32,13 @@ export default function Slider({images}){
   return (
     <div className="relative w-full h-full overflow-hidden">
       <div className="absolute bg-asphalte w-full h-1/2"></div>
-      <div className="z-50 left-0 absolute h-full flex items-center" onClick={displayPrevious}>
-        <div className="p-2 md:p-4 bg-automne h-16 w-16 flex justify-center items-center">
+      <div className="z-50 left-0 absolute h-full flex items-center cursor-pointer" onClick={displayPrevious}>
+        <div className="p-2 md:p-4 bg-automne h-16 w-16 flex justify-center items-center shadow-lg">
           <ArrowLeft />
         </div>
       </div>
-      <div className="z-50 right-0 absolute h-full flex items-center" onClick={displayNext}>
-        <div className="p-4 bg-automne h-16 w-16 flex justify-center items-center">
+      <div className="z-50 right-0 absolute h-full flex items-center cursor-pointer" onClick={displayNext}>
+        <div className="p-4 bg-automne h-16 w-16 flex justify-center items-center shadow-lg">
           <ArrowRight />
         </div>        
       </div>

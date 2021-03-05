@@ -8,12 +8,12 @@ function isEven(number){
 export default function ContentBlock({blocks}){
   return (
     <section id="esprit">
-      <div className="my-20 md:my-40">
+      <div className="outer-spacing">
         <Container>
-          <div className="px-6 py-3 md:py-6 md:px-12 relative z-20">
-            <h2 className="text-center"><span className="bg-automne p-3 shadow-lg">L'esprit TGC</span></h2>
+          <div className="inner-spacing relative z-20">
+            <h2 className="text-center"><span className="section-title bg-automne">L'esprit TGC</span></h2>
           </div>
-          <div className="px-6 py-3 md:py-6 md:px-12">
+          <div className="inner-spacing">
             {blocks.map((block, index) => (
               <div key={block.title} className="w-full md:w-10/12 mx-auto my-10">
                 <div className={`flex justify-between items-center ${isEven(index) ? "flex-row" : "flex-row-reverse"} -m-3`}>

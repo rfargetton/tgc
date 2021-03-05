@@ -9,7 +9,7 @@ export default function InstagramFeed({posts}){
       <div className="outer-spacing">
         <div className="container">
           <div className="inner-spacing">
-            <h2><span className="bg-asphalte p-3 shadow-lg text-automne">Suivez l'aventure</span></h2>
+            <h2><span className="section-title bg-asphalte text-automne">Suivez l'aventure</span></h2>
             <div className="pt-2 flex text-asphalte">
               <Instagram />
               <a target="_blank" className="border-b-2 border-asphalte ml-2" href="https://www.instagram.com/touraine_gravel_challenge">@touraine_gravel_challenge</a>

@@ -24,7 +24,9 @@
   p {
     @apply text-base leading-relaxed;
   }
-
+  .section-title {
+    @apply px-6 py-3 shadow-lg rounded-xl;
+  }
 }
 
 @layer components {
