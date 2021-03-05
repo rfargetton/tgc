@@ -26,7 +26,7 @@ export default function About({ pageData, allRoutesData }) {
         <ContentBlock blocks={pageData.concept_blocks} />     
 
         <RouteList routes={allRoutesData}>
-          <h2 className="text-center"><span className="bg-automne p-3 shadow-lg">Les parcours</span></h2>
+          <h2 className="text-center mt-6 mb-12"><span className="bg-automne p-3 shadow-lg">Les parcours</span></h2>
         </RouteList>
 
         <Infos>
