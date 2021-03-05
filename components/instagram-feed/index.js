@@ -2,7 +2,6 @@ import Image from "next/image";
 import Container from "../container";
 import {Instagram} from "react-feather";
 
-
 export default function InstagramFeed({posts}){
 
   return  (

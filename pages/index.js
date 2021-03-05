@@ -8,6 +8,7 @@ import RouteList from "../components/route-list";
 import InfoCard from "../components/info-card";
 import Gallery from "../components/gallery";
 import InstagramFeed from "../components/instagram-feed";
+import settings from "../config.json";
 
 export default function Home({ allRoutesData, pageData, posts }) {
 
@@ -46,8 +47,8 @@ export async function getStaticProps() {
   let posts = []
 
   const client = new Instagram({
-    username: "romaricfargetton",
-    password: "Woku69100?"
+    username: process.env.IG_USERNAME,
+    password: process.env.IG_PASSWORD
   })
 
   try {
@@ -55,7 +56,7 @@ export async function getStaticProps() {
     await client.login();
     console.log("success login to instagram");
     const instagram = await client.getPhotosByUsername({
-      username: "touraine_gravel_challenge",
+      username: settings.instagram_account,
     })
     if (instagram["user"]["edge_owner_to_timeline_media"]["count"] > 0) {
       // if we receive timeline data back

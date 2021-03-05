@@ -114,7 +114,7 @@ collections:
           - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Facebook", name: "facebook_link"}
           - {label: "Komoot", name: "komoot_link"}
+          - {label: "Instagram", name: "instagram_account", hint: "renseigner le login du compte Instagram"}
           - { name: "edition", label: "Edition", widget: "number", hint: "numéro de l'edition"}
           - { name: "location", label: "Lieu", hint: "Lieu ou se déroule l'événement"}
           - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", hint: "Date de l'événement"}
-
