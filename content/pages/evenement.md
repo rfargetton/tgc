@@ -3,6 +3,7 @@ title: l'Événement
 heading: Découvrez l'événement
 subheading: "Le Touraine Gravel Challenge est une épreuve de pur gravel se
   déroulant dans les environs de la ville de Tours. "
+image: /images/uploads/hero-index.jpg
 concept_blocks:
   - title: Du gravel, mais pas seulement
     description: "La trace à 70% gravel sera variée avec des chemins de vigne, des
@@ -37,7 +38,7 @@ basic_features:
     pour les vélos...)
   - "Une collation d'arrivée "
   - Des dotations offertes par nos partenaires
-  - Un pack Komoot multi-régions pour chaque participant à l’événement
+  - Un pack Komoot multi-régions
   - Un “top tube stickers” offert par Komoot aux participant-e-s, présentant le
     profil de dénivelé des épreuves et les infos importantes
 plus_features:
