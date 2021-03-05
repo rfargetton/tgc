@@ -8,9 +8,9 @@ import Card from "../card";
 export default function RouteList({ routes, children }) {
   return (
     <section>
-      <div className="my-40 relative z-20">
+      <div className="my-40">
         <Container>
-          <div className="p-3 md:p-6">
+          <div className="p-3 md:p-6 relative z-20">
             {children}
           </div>
           <div className="p-3 md:p-6">
