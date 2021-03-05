@@ -8,9 +8,10 @@ import RouteList from "../components/route-list";
 import InfoCard from "../components/info-card";
 import Gallery from "../components/gallery";
 import InstagramFeed from "../components/instagram-feed";
+import Supporters from "../components/supporters-list";
 import settings from "../config.json";
 
-export default function Home({ allRoutesData, pageData, posts }) {
+export default function Home({ allRoutesData, allSupportersData, pageData, posts }) {
 
   console.log(posts);
 
@@ -29,10 +30,12 @@ export default function Home({ allRoutesData, pageData, posts }) {
         </Hero>
 
         <RouteList routes={allRoutesData}>
-          <h2 className="text-center"><span className="bg-automne p-3 shadow-lg">Les parcours</span></h2>
+          <h2 className="text-center"><span className="section-title bg-automne">Les parcours</span></h2>
         </RouteList>
 
         <Gallery images={pageData.gallery} />
+
+        <Supporters supporters={allSupportersData} />
 
         <InstagramFeed posts={posts.slice(0, 4)}/>
 
@@ -70,10 +73,12 @@ export async function getStaticProps() {
   }
 
   const allRoutesData = await getAllFilesData("parcours");
+  const allSupportersData = await getAllFilesData("partenaires");
   const pageData = await getFile("pages", "home");
   return {
     props: {
       allRoutesData,
+      allSupportersData,
       pageData,
       posts
     },

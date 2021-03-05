@@ -1,8 +1,10 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import { getFile } from "../lib/file";
+import { getAllFilesData } from "../lib/folder";
+import Supporters from "../components/supporters-list";
 
-export default function About({ pageData }) {
+export default function About({ pageData, allSupportersData }) {
   return (
     <Layout 
       url="/about" 
@@ -14,7 +16,9 @@ export default function About({ pageData }) {
           intro={pageData.subheading}
         >
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
-        </Hero>        
+        </Hero>
+
+        <Supporters supporters={allSupportersData} />        
       </div>
 
     </Layout>
@@ -23,10 +27,12 @@ export default function About({ pageData }) {
 
 export async function getStaticProps() {
   const pageData = await getFile("pages", "a-propos");
+  const allSupportersData = await getAllFilesData("partenaires");
 
   return {
     props: {
       pageData,
+      allSupportersData
     },
   };
 }
