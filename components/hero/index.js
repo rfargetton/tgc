@@ -2,11 +2,11 @@ import Image from "next/image";
 
 import Container from "../container";
 
-export default function Hero({image, intro, children, bgColor}){
+export default function Hero({image, intro, children}){
 
   return (
     <section className="-mb-32">
-      <div className={`text-gravier-light pt-20   ${bgColor === "feuillage" ? "bg-feuillage" : "bg-asphalte"}`}>
+      <div className="text-gravier-light bg-feuillage">
         <Container>
           <div className="relative">
             <div className="p-6 block md:absolute z-20 h-full w-full md:w-10/12 flex flex-col justify-center items-start">
@@ -29,7 +29,7 @@ export default function Hero({image, intro, children, bgColor}){
           }
         </Container>
       </div>
-      <div className={`absolute clip-path bg-${bgColor} w-full h-40`}></div>
+      <div className="absolute clip-path bg-feuillage w-full h-40"></div>
     </section>
   )
 }

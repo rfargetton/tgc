@@ -14,12 +14,14 @@ export default function Home({ allRoutesData, pageData, posts }) {
   console.log(posts);
 
   return (
-    <Layout url="/" title={pageData.title}>
+    <Layout 
+      url="/" 
+      title={pageData.title}
+    >
       <div>
         <Hero 
           image={pageData.image}
           intro={pageData.subheading}
-          bgColor="feuillage"
         >
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
           <InfoCard />
@@ -44,8 +46,8 @@ export async function getStaticProps() {
   let posts = []
 
   const client = new Instagram({
-    username: "touraine_gravel_challenge",
-    password: "Tira6464"
+    username: "romaricfargetton",
+    password: "Woku69100?"
   })
 
   try {
