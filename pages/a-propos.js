@@ -4,8 +4,12 @@ import { getFile } from "../lib/file";
 import { getAllFilesData } from "../lib/folder";
 import Supporters from "../components/supporters-list";
 import Team from "../components/team";
+import Press from "../components/press";
 
 export default function About({ pageData, allSupportersData }) {
+
+  console.log(pageData);
+  
   return (
     <Layout 
       url="/about" 
@@ -20,6 +24,8 @@ export default function About({ pageData, allSupportersData }) {
         </Hero>
 
         <Team team={pageData.team} />
+
+        <Press articles={pageData.press} />
 
         <Supporters supporters={allSupportersData} />   
 
