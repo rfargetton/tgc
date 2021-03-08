@@ -2,7 +2,6 @@ import { Formik, Field } from "formik" ;
 import { useRouter } from "next/router" ;
 
 import Card from "../card";
-import Container from "../container";
 
 const urlEncode = (data) => {
   return Object.entries(data).map((entry) => {
@@ -11,6 +10,7 @@ const urlEncode = (data) => {
 }
 
 export default function ContactForm({}){
+  const router = useRouter();
   return (
     <div className="-mt-20 relative z-20">
       <div className="container">
@@ -48,7 +48,7 @@ export default function ContactForm({}){
                   })
                   .then(() => {
                     actions.resetForm();
-                    router.push('/success')
+                    router.push('/');
                   })
                   .catch(() => {
                     alert("Il y a eu une erreur lors de la transmission du message. Merci de réessayer.");
