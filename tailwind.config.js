@@ -18,7 +18,8 @@ const colors = require('tailwindcss/colors');
       },
       gray: colors.trueGray,
       white: colors.white,
-      black: colors.black
+      black: colors.black,
+      red: colors.red
     },
     fontSize: {
       "sm": "0.75rem",

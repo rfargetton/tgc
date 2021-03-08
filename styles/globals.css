@@ -42,6 +42,27 @@
   .inner-spacing {
     @apply px-6 py-3 md:py-6 md:px-12; 
   }
+  .field {
+    @apply text-lg block w-full rounded-xl shadow-lg px-4 py-2 my-2 border-transparent bg-gray-200 focus:outline-none focus:ring-2 focus:ring-automne focus:shadow-xl ;
+  }
+  .radio {
+    @apply mr-2;
+  }
+  .field-block {
+    @apply mb-6;
+  }
+  .error {
+    @apply ring-2 ring-red-500;
+  }
+  .error-message {
+    @apply text-red-500;
+  }
+  .label {
+    @apply text-lg font-bold mr-4 block md:inline-block ;
+  }
+  .textarea {
+    @apply h-48;
+  }
 }
 
 @layer utilities {
