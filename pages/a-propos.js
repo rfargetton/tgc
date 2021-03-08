@@ -3,6 +3,7 @@ import Hero from "../components/hero";
 import { getFile } from "../lib/file";
 import { getAllFilesData } from "../lib/folder";
 import Supporters from "../components/supporters-list";
+import Team from "../components/team";
 
 export default function About({ pageData, allSupportersData }) {
   return (
@@ -18,7 +19,10 @@ export default function About({ pageData, allSupportersData }) {
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
         </Hero>
 
-        <Supporters supporters={allSupportersData} />        
+        <Team team={pageData.team} />
+
+        <Supporters supporters={allSupportersData} />   
+
       </div>
 
     </Layout>
