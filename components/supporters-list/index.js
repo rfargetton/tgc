@@ -1,6 +1,6 @@
 export default function Supporters({supporters}){
   return(
-    <section>
+    <section id="partenaires">
       <div className="outer-spacing">
         <div className="container">
           <div className="inner-spacing relative z-20">

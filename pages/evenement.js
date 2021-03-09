@@ -7,6 +7,7 @@ import RouteList from "../components/route-list";
 import Infos from "../components/infos";
 import FeaturesList from "../components/features-list";
 import PricesList from "../components/prices-list";
+import PageNav from "../components/page-nav";
 
 export default function About({ pageData, allRoutesData }) {
   return (
@@ -21,6 +22,13 @@ export default function About({ pageData, allRoutesData }) {
           bgColor="asphalte"
         >
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
+          <PageNav 
+            links={[
+              {title:"L'esprit TGC", destination:"esprit"},
+              {title:"Les parcours", destination:"parcours"},
+              {title:"Tarifs et infos pratiques", destination:"infos"}
+            ]} 
+          />
         </Hero>   
 
         <ContentBlock blocks={pageData.concept_blocks} />     

@@ -5,10 +5,9 @@ import { getAllFilesData } from "../lib/folder";
 import Supporters from "../components/supporters-list";
 import Team from "../components/team";
 import Press from "../components/press";
+import PageNav from "../components/page-nav";
 
 export default function About({ pageData, allSupportersData }) {
-
-  console.log(pageData);
   
   return (
     <Layout 
@@ -21,6 +20,13 @@ export default function About({ pageData, allSupportersData }) {
           intro={pageData.subheading}
         >
           <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
+          <PageNav 
+            links={[
+              {title:"L'équipe TGC", destination:"equipe"},
+              {title:"Presse", destination:"presse"},
+              {title:"Nos partenaires", destination:"partenaires"}
+            ]} 
+          />
         </Hero>
 
         <Team team={pageData.team} />

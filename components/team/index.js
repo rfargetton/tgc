@@ -2,8 +2,7 @@ import Image from "next/image";
 
 export default function Team({team}){
   return (
-    <section>
-
+    <section id="equipe">
       <div className="outer-spacing">
         <div className="container">
           <div className="inner-spacing relative z-20">

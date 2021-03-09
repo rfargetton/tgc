@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Press({ articles }){
   return (
-    <section>
+    <section id="presse">
       <div className="outer-spacing">
         <div className="container">
           <div className="inner-spacing">

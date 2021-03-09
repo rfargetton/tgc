@@ -4,7 +4,7 @@ import RouteCard from "../route-card";
 
 export default function RouteList({ routes, children }) {
   return (
-    <section>
+    <section id="parcours">
       <div className="outer-spacing">
         <div className="container">
           <div className="inner-spacing relative z-20">

@@ -3,7 +3,7 @@ import FeaturesList from "../features-list";
 
 export default function Infos({children}){
   return (
-    <section>
+    <section id="infos">
       <div className="my-20 md:my-40">
         <Container>
           <div className="px-6 py-3 md:py-6 md:px-12">
