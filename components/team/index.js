@@ -11,7 +11,7 @@ export default function Team({team}){
           <div className="inner-spacing">
             <ul className="flex flex-col md:flex-row -m-3">
               {team.map((member) => (
-                <li key={member.name} className="w-full md:w-1/4 flex flex-col items-center my-3 md:mx-3 text-center">
+                <li key={member.name} className="max-w-full md:w-1/4 flex flex-col items-center m-3 text-center">
                   <Image 
                     src={member.image}
                     height="400"
