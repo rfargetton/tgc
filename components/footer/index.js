@@ -4,7 +4,7 @@ import settings from "../../config.json";
 
 export default function Footer({}){
   return (
-    <footer className="mt-20 md:mt-40 bg-feuillage text-gravier">
+    <footer className="mt-20 md:mt-40 bg-feuillage text-gravier-light">
       <div className="container">
         <div className="p-6 md:p-12">
           <div className="flex flex-col md:flex-row items-center">
@@ -15,9 +15,9 @@ export default function Footer({}){
             </div>
             <div className="w-full md:w-2/3">
               <nav className="flex flex-col sm:flex-row my-4">
-                <Link href="/evenement"><a className="text-xl font-bold mx-2">L'événement</a></Link>
-                <Link href="/a-propos"><a className="text-xl font-bold mx-2">À propos</a></Link>
-                <Link href="/contact"><a className="text-xl font-bold mx-2">Contact</a></Link>
+                <Link href="/evenement"><a className="text-xl font-bold mx-2 hover:text-gravier">L'événement</a></Link>
+                <Link href="/a-propos"><a className="text-xl font-bold mx-2 hover:text-gravier">À propos</a></Link>
+                <Link href="/contact"><a className="text-xl font-bold mx-2 hover:text-gravier">Contact</a></Link>
               </nav>
               <div className="flex flex-col sm:flex-row my-4">
                 <a className="mx-2" href={settings.facebook_link}>Facebook</a>

@@ -7,7 +7,7 @@ export default function Hero({image, intro, children}){
       <div className="text-gravier-light bg-feuillage">
         <div className="container">
           <div className="relative">
-            <div className="p-6 md:p-12 md:absolute z-20 h-full w-full md:w-10/12 flex flex-col justify-center items-start">
+            <div className="p-6 md:p-12 absolute z-20 h-full w-full md:w-10/12 flex flex-col justify-center items-start">
               {children}
             </div>
             <div className="h-136 ml-auto w-full md:w-9/12 relative rounded-0 md:rounded-xl overflow-hidden">

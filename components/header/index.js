@@ -1,23 +1,23 @@
 import Link from "next/link" ;
+import {useRouter} from "next/router";
 
-import Container from "../container";
 import settings from "../../config.json";
 
 export default function Header({ siteName }) {
   return (
-    <header className="bg-feuillage">
-      <div className="container">
+    <header className="z-50">
+      <div className="container bg-feuillage">
         <nav className="px-6 md:px-12 py-2 flex flex-col md:flex-row justify-between items-stretch md:items-center">
           <div className="flex flex-grow items-center justify-between mb-4 md:mb-0">
             <Link href="/">
-              <a className="py-2 text-2xl"><img className="h-40 mb-0 md:-mb-20 transform scale-95 hover:scale-105 transition" src={settings.logo} /></a>
+              <a className="py-2 text-2xl"><img className="h-24 md:h-40 mb-0 md:-mb-20 transform scale-95 hover:scale-105 transition" src={settings.logo} /></a>
             </Link>
-            <Link href="/"><a className="md-hidden btn">Contact</a></Link>
+            <Link href={settings.register_link}><a className="md-hidden btn">S'inscrire</a></Link>
           </div>
-          <div className="flex overflow-x-auto -m-2 text-gravier">
-            <Link href="/evenement"><a className="text-lg font-medium m-2 flex-shrink-0 hover:text-gravier-light">L'événement</a></Link>
-            <Link href="/a-propos"><a className="text-lg font-medium m-2 flex-shrink-0 hover:text-gravier-light">À propos</a></Link>
-            <Link href="/contact"><a className="text-lg font-medium m-2 flex-shrink-0 hover:text-gravier-light">Contact</a></Link>
+          <div className="flex overflow-x-auto -mx-2">
+            <NavLink href="/evenement">L'événement</NavLink>
+            <NavLink href="/a-propos">À propos</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
           </div>
           <div className="sm-hidden ml-6">
             <Link href={settings.register_link}><a className="btn">S'inscrire</a></Link>  
@@ -25,5 +25,14 @@ export default function Header({ siteName }) {
         </nav>
       </div>
     </header>
+  )
+}
+
+function NavLink({ children, href }){
+  const router = useRouter();
+  return (
+    <Link href={href}>
+      <a className={`text-lg font-medium p-2 rounded flex-shrink-0 hover:bg-feuillage-dark ${router.pathname === href ? "text-white" : "text-gravier-light"}`}>{children}</a>
+    </Link>
   )
 }

@@ -12,7 +12,7 @@ export default function Contact({pageData}){
         <Hero 
           image={pageData.image}
         >
-          <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
+          <h1 className="mb-6 w-full md:w-1/2 text-white">{pageData.heading}</h1>
         </Hero>
 
         <ContactForm />

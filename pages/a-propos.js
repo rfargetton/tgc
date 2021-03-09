@@ -19,7 +19,7 @@ export default function About({ pageData, allSupportersData }) {
           image={pageData.image}
           intro={pageData.subheading}
         >
-          <h1 className="mb-6 w-full md:w-1/2 ">{pageData.heading}</h1>
+          <h1 className="mb-6 w-full md:w-1/2 text-white">{pageData.heading}</h1>
           <PageNav 
             links={[
               {title:"L'équipe TGC", destination:"equipe"},

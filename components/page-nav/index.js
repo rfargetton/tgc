@@ -5,10 +5,10 @@ export default function PageNav({links}){
   return (
     <div>
       <Card>
-        <div className="p-4 flex bg-gravier-light">
+        <div className="p-4 flex flex-col md:flex-row bg-gravier-light">
           {links.map((link) => (
             <a 
-              className="m-3 text-asphalte hover:text-automne font-medium flex" 
+              className="my-2 md:mx-2 text-asphalte hover:text-automne font-medium flex" 
               key={link.destination} 
               href={`#${link.destination}`}
             >

@@ -11,9 +11,9 @@ export default function RouteList({ routes, children }) {
             {children}
           </div>
           <div className="inner-spacing">
-            <ul className="list-none flex flex-col md:flex-row m-0 md:-m-3">
+            <ul className="grid md:grid-cols-2 gap-6">
               {routes.map((route) => (
-                <li className="w-full md:w-1/2 my-3 md:m-3 box-border" key={route.id}>
+                <li className="box-border transform scale-100 hover:scale-105 transition" key={route.id}>
                   <RouteCard 
                     title={route.title}
                     description={route.description}

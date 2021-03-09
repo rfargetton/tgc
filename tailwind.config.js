@@ -11,7 +11,9 @@ const colors = require('tailwindcss/colors');
         DEFAULT: "#DD773B",
         dark: "#C16834 "
       },
-      feuillage: "#474C33",
+      feuillage: {
+        dark: "#3E432D",
+        DEFAULT: "#474C33"},
       gravier: {
         light: "#ECD8B6",
         DEFAULT: "#E1BF86"

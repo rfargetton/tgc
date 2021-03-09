@@ -9,7 +9,7 @@ export default function Press({ articles }){
             <h2 className="text-center"><span className="section-title bg-automne">Ils parlent de nous !</span></h2>
           </div>
           <div className="inner-spacing">
-            <ul className="grid grid-cols-3">
+            <ul className="grid md:grid-cols-3">
               {articles.map((article) => (
                 <li key={article.title} className="transform scale-95 hover:scale-100 transition">
                   <a href={article.link}>
