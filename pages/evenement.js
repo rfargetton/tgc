@@ -8,12 +8,13 @@ import Infos from "../components/infos";
 import FeaturesList from "../components/features-list";
 import PricesList from "../components/prices-list";
 import PageNav from "../components/page-nav";
+import settings from "../config.json";
 
 export default function About({ pageData, allRoutesData }) {
   return (
     <Layout 
       url="/about" 
-      title={pageData.title}
+      title={`${pageData.title} • ${settings.site_name}`}
     >
       <div>
         <Hero 

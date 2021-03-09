@@ -2,12 +2,13 @@ import {getFile} from "../lib/file";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import ContactForm from "../components/contact-form";
+import settings from "../config.json";
 
 export default function Contact({pageData}){
   return (
     <Layout 
       url="/contact" 
-      title={pageData.title}
+      title={`${pageData.title} • ${settings.site_name}`}
     >
         <Hero 
           image={pageData.image}

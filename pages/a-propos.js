@@ -6,13 +6,14 @@ import Supporters from "../components/supporters-list";
 import Team from "../components/team";
 import Press from "../components/press";
 import PageNav from "../components/page-nav";
+import settings from "../config.json";
 
 export default function About({ pageData, allSupportersData }) {
   
   return (
     <Layout 
       url="/about" 
-      title={pageData.title}
+      title={`${pageData.title} • ${settings.site_name}`}
     >
       <div>
         <Hero 
