@@ -1,9 +1,11 @@
 ---
-title: l'Événement
+title: L'événement
 heading: Découvrez l'événement
-subheading: "Le Touraine Gravel Challenge est une épreuve de pur gravel se
-  déroulant dans les environs de la ville de Tours. "
-image: /images/uploads/hero-index.jpg
+subheading:
+  Le Touraine Gravel Challenge est une épreuve de pur gravel se déroulant dans
+  les environs de la ville de Tours. Deux parcours pour découvrir parmi les plus
+  beaux châteaux et villages des vals de Loire, du Cher et de l’Indre.
+image: /images/uploads/hero-evenement.png
 concept_blocks:
   - title: Du gravel, mais pas seulement
     description: "La trace à 70% gravel sera variée avec des chemins de vigne, des
