@@ -14,6 +14,7 @@ export default function Layout({ children, url, title, description, image }) {
           name="description" 
           content={description ? description : settings.description} 
         />
+        <link rel="icon" type="image/png" href="/images/logo-icon.png" />
         <link 
           rel="canonical" 
           href={settings.base_url + url} 
