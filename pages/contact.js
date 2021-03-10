@@ -9,6 +9,7 @@ export default function Contact({pageData}){
     <Layout 
       url="/contact" 
       title={`${pageData.title} • ${settings.site_name}`}
+      image={pageData.image}
     >
         <Hero 
           image={pageData.image}

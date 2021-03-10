@@ -15,6 +15,7 @@ export default function About({ pageData, allRoutesData }) {
     <Layout 
       url="/about" 
       title={`${pageData.title} • ${settings.site_name}`}
+      image={pageData.image}
     >
       <div>
         <Hero 

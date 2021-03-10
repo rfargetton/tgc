@@ -26,7 +26,7 @@ export default function Layout({ children, url, title, description, image }) {
         />
         <meta 
           property="og:title"
-          content={title ? `${title} | ${settings.site_name}` : ""}
+          content={title ? title : settings.site_name}
         />
         <meta 
           property="og:description"

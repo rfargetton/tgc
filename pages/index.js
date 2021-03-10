@@ -19,6 +19,7 @@ export default function Home({ allRoutesData, allSupportersData, pageData, posts
     <Layout 
       url="/" 
       title={`${settings.site_name} • ${pageData.heading}`}
+      image={pageData.image}
     >
       <div>
         <Hero 

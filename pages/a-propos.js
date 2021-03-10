@@ -14,6 +14,7 @@ export default function About({ pageData, allSupportersData }) {
     <Layout 
       url="/about" 
       title={`${pageData.title} • ${settings.site_name}`}
+      image={pageData.image}
     >
       <div>
         <Hero 
