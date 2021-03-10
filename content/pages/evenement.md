@@ -29,7 +29,7 @@ options:
     price: 30
   - description: Week-end complet incluant une ride découverte et une soirée le
       samedi soir, ainsi que l’épreuve du dimanche
-    price: 40
+    price: 50
 basic_features:
   - "Une trace GPS certifiée 100 % esprit Gravel "
   - Des ravitaillements sur le parcours
