@@ -7,7 +7,7 @@ export default function Infos({children}){
       <div className="outer-spacing">
         <Container>
           <div className="inner-spacing">
-            <h2 className="text-center"><span className="section-title bg-white">Tarifs et Infos pratiques</span></h2>
+            <h2 className="text-center"><span className="section-title bg-white">Infos pratiques</span></h2>
           </div>
           <div className="inner-spacing">
             {children}

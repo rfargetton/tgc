@@ -29,7 +29,7 @@ export default function About({ pageData, allRoutesData }) {
             links={[
               {title:"L'esprit TGC", destination:"esprit"},
               {title:"Les parcours", destination:"parcours"},
-              {title:"Tarifs et infos pratiques", destination:"infos"}
+              {title:"Infos pratiques", destination:"infos"}
             ]} 
           />
         </Hero>   

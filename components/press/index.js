@@ -12,7 +12,7 @@ export default function Press({ articles }){
             <ul className="grid md:grid-cols-3">
               {articles.map((article) => (
                 <li key={article.title} className="transform scale-95 hover:scale-100 transition">
-                  <a href={article.link}>
+                  <a href={article.link} target="_blank">
                     <div className="relative h-72 w-full rounded-xl overflow-hidden shadow-xl">
                       <Image src={article.image} layout="fill" objectFit="cover" alt={article.title} />
                     </div>
