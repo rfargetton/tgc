@@ -14,7 +14,7 @@ export default function Press({ articles }){
                 <li key={article.title} className="transform scale-95 hover:scale-100 transition">
                   <a href={article.link}>
                     <div className="relative h-72 w-full rounded-xl overflow-hidden shadow-xl">
-                      <Image src={article.image} layout="fill" objectFit="cover" />
+                      <Image src={article.image} layout="fill" objectFit="cover" alt={article.title} />
                     </div>
                     <h3>{article.title}</h3>
                     <div>sur <span className="text-automne font-bold" href={article.link}>{article.publication}</span></div>

@@ -14,6 +14,7 @@ export default function RouteCard({image, title, description, link, distance, el
             src={image}
             layout="fill"
             objectFit="cover"
+            alt={`image du parcours ${title}`}
           />
         </div>
         <div className="-mt-28 relative z-20 flex flex-col items-start p-6 flex-grow">

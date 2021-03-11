@@ -17,6 +17,7 @@ export default function Team({team}){
                     height="400"
                     width="400"
                     className="rounded-full"
+                    alt={member.name}
                   />
                   <h3 className="text-automne">{member.name}</h3>
                   <p>{member.bio}</p>

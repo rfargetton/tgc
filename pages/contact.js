@@ -13,8 +13,9 @@ export default function Contact({pageData}){
     >
         <Hero 
           image={pageData.image}
+          pageName="contact"
         >
-          <h1 className="mb-6 w-full md:w-1/2 text-white">{pageData.heading}</h1>
+          <h1 className="mb-6 w-full lg:w-1/2 text-white">{pageData.heading}</h1>
         </Hero>
 
         <ContactForm />

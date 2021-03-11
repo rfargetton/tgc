@@ -28,6 +28,7 @@ export default function ContentBlock({blocks}){
                         width="400"
                         height="400"
                         className="rounded-xl"
+                        alt={block.title}
                       />
                     </div>
                   </div>

@@ -22,8 +22,9 @@ export default function About({ pageData, allRoutesData }) {
           image={pageData.image}
           intro={pageData.subheading}
           bgColor="asphalte"
+          pageName="événement"
         >
-          <h1 className="mb-6 w-full md:w-1/2 text-white">{pageData.heading}</h1>
+          <h1 className="mb-6 w-full lg:w-1/2 text-white">{pageData.heading}</h1>
           <PageNav 
             links={[
               {title:"L'esprit TGC", destination:"esprit"},

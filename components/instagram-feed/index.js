@@ -24,7 +24,7 @@ export default function InstagramFeed({posts}){
                 {posts.map(({node: post}) => (
                   <li className="shadow-2xl w-1/4 rounded-xl overflow-hidden mx-3" key={post.id}>
                     <a target="_blank" href={`https://www.instagram.com/p/${post.shortcode}`}>
-                      <img src={post.thumbnail_src} />
+                      <img src={post.thumbnail_src} alt={`image du post instagram ${post.id}`} />
                     </a>
                   </li>
                 ))}

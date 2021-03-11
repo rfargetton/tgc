@@ -11,7 +11,7 @@ export default function Supporters({supporters}){
               {supporters.map((supporter) => (
                 <li className="p-4 flex-shrink" key={supporter.title}>
                   <a className="block transform scale-100 hover:scale-105 transition" target="_blank" href={supporter.link}>
-                    <img src={supporter.logo} />
+                    <img src={supporter.logo} alt={`logo de ${supporter.title}`} />
                   </a>
                 </li>
               ))}

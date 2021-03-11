@@ -25,8 +25,9 @@ export default function Home({ allRoutesData, allSupportersData, pageData, posts
         <Hero 
           image={pageData.image}
           intro={pageData.subheading}
+          pageName="accueil"
         >
-          <h1 className="mb-6 w-full md:w-1/2 text-white">{pageData.heading}</h1>
+          <h1 className="mb-6 w-full lg:w-1/2 text-white">{pageData.heading}</h1>
           <InfoCard />
         </Hero>
 
