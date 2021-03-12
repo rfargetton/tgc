@@ -22,8 +22,8 @@ export default function InfoCard({edition, location, date}){
             <div className="text-asphalte font-medium"><Date dateString={settings.date} /></div>
           </div>
 
-          <div className="btn my-2 md:mx-2 self-end">
-            <a href={settings.register_link}>S'inscrire</a>
+          <div className="my-2 md:mx-2 self-end md:self-center">
+            <a href={settings.register_link} target="_blank" className="btn">S'inscrire</a>
           </div>
         </div>
       </Card>

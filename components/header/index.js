@@ -12,7 +12,7 @@ export default function Header({ siteName }) {
             <Link href="/">
               <a className="py-2 text-2xl"><img className="h-24 md:h-40 mb-0 md:-mb-20 transform scale-95 hover:scale-105 transition" src={settings.logo} /></a>
             </Link>
-            <Link href={settings.register_link}><a className="md-hidden btn">S'inscrire</a></Link>
+            <a href={settings.register_link} target="_blank" className="md-hidden btn">S'inscrire</a>
           </div>
           <div className="flex overflow-x-auto -mx-2">
             <NavLink href="/evenement">L'événement</NavLink>
@@ -20,7 +20,7 @@ export default function Header({ siteName }) {
             <NavLink href="/contact">Contact</NavLink>
           </div>
           <div className="sm-hidden ml-6">
-            <Link href={settings.register_link}><a className="btn">S'inscrire</a></Link>  
+            <a href={settings.register_link} target="_blank" className="btn">S'inscrire</a> 
           </div>
         </nav>
       </div>
