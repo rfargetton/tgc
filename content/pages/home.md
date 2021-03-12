@@ -11,4 +11,6 @@ gallery:
   - /images/uploads/galerie-photos-3.jpg
   - /images/uploads/galerie-photos-13.jpg
   - /images/uploads/galerie-photos-8.jpg
+  - /images/uploads/galerie-photos-1.jpg
+  - /images/uploads/galerie-photos-4.jpg
 ---
