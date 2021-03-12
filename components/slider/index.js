@@ -55,7 +55,7 @@ function Slide({image, active, handleClick}){
   return (
     <li 
       key={image}
-      className={`w-1/2 h-56 md:h-96 relative flex-shrink-0 bg-gray-700 transform ${active ? "scale-100" : "scale-90"} transition duration-500 rounded-xl overflow-hidden`}
+      className={`w-1/2 h-56 md:h-96 relative flex-shrink-0 bg-gravier transform ${active ? "scale-100" : "scale-90"} transition duration-500 rounded-xl overflow-hidden`}
       onClick={handleClick}
     >
       <Image 
