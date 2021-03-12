@@ -20,9 +20,9 @@ export default function InstagramFeed({posts}){
           <div className="absolute bg-automne w-full h-1/2"></div>
           <div className="container">
             <div className="inner-spacing">
-              <ul className="flex -mx-3 z-20 relative">
+              <ul className="flex flex-col md:flex-row -mx-3 z-20 relative">
                 {posts.map(({node: post}) => (
-                  <li className="shadow-2xl w-1/4 rounded-xl overflow-hidden mx-3" key={post.id}>
+                  <li className="shadow-2xl max-w-full md:w-1/4 rounded-xl overflow-hidden m-3" key={post.id}>
                     <a target="_blank" href={`https://www.instagram.com/p/${post.shortcode}`}>
                       <img src={post.thumbnail_src} alt={`image du post instagram ${post.id}`} />
                     </a>
