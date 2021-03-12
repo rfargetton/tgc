@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {Code} from "react-feather";
 
 import settings from "../../config.json";
 
@@ -23,6 +24,10 @@ export default function Footer({}){
                 <a className="mx-2" href={settings.facebook_link}>Facebook</a>
                 <a className="mx-2" href={settings.komoot_link}>Komoot</a>
                 <a className="mx-2" href={`https://www.instagram.com/${settings.instagram_account}`}>Instagram</a>
+              </div>
+              <div className="mx-2 my-4 text-automne flex items-center">
+                <Code />
+                <a target="_blank" href="https://www.romaricfargetton.com" className="mx-2 border-b border-automne">Site web par Romaric Fargetton</a>
               </div>
             </div>
           </div>
