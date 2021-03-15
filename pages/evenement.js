@@ -46,9 +46,9 @@ export default function About({ pageData, allRoutesData }) {
           </div>
           <PricesList description="Pour chacun des parcours, deux options s’offrent à toi :" options={pageData.options} />
           <div>
-            <h3 className="text-automne">Que comprends mon inscription ?</h3>
+            <h3 className="text-automne">Que comprend mon inscription ?</h3>
           </div>
-          <FeaturesList description="Pour chacune des tarifications, ton inscription comprends" features={pageData.basic_features} />
+          <FeaturesList description="Pour chacune des tarifications, ton inscription comprend" features={pageData.basic_features} />
           <FeaturesList description="Pour celles et ceux participant au week-end complet, l’inscription inclus également :" features={pageData.plus_features} />
         </Infos>
 

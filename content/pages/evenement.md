@@ -27,7 +27,7 @@ concept_blocks:
 options:
   - description: "Épreuve du dimanche seule "
     price: 30
-  - description: Week-end complet incluant une ride découverte et une soirée le
+  - description: Week-end complet incluant un ride découverte et une soirée le
       samedi soir, ainsi que l’épreuve du dimanche
     price: 50
 basic_features:
@@ -36,7 +36,7 @@ basic_features:
   - Des photographes sur le parcours
   - "Deux QOM et KOM secrets avec de belles dotations "
   - Un petit-déjeuner d'accueil le dimanche matin à l’Etape 84
-  - L'Etape 84, un lieu logistique de qualité (nuitée, repas, local sécurisée
+  - L'Etape 84, un lieu logistique de qualité (nuitée, repas, local sécurisé
     pour les vélos...)
   - "Une collation d'arrivée "
   - Des dotations offertes par nos partenaires
@@ -44,7 +44,7 @@ basic_features:
   - Un “top tube stickers” offert par Komoot aux participant-e-s, présentant le
     profil de dénivelé des épreuves et les infos importantes
 plus_features:
-  - "Un ride découverte semi-urbain le samedi après-midi d'environ 40 km "
+  - "Un ride découverte semi-urbain le samedi après-midi d'environ 40km "
   - Un ravito surprise
   - Une soirée de présentation de l'évènement et des partenaires le samedi soir
     à L'Etape 84
