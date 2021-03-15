@@ -31,12 +31,12 @@ options:
       samedi soir, ainsi que l’épreuve du dimanche
     price: 50
 basic_features:
-  - "Une trace GPS certifiée 100 % esprit Gravel "
+  - "Une trace GPS certifiée 100% esprit Gravel "
   - Des ravitaillements sur le parcours
   - Des photographes sur le parcours
   - "Deux QOM et KOM secrets avec de belles dotations "
-  - Un petit-déjeuner d'accueil le dimanche matin à l’Etape 84
-  - L'Etape 84, un lieu logistique de qualité (nuitée, repas, local sécurisé
+  - Un petit-déjeuner d'accueil le dimanche matin à l’Étape 84
+  - L'Étape 84, un lieu logistique de qualité (nuitée, repas, local sécurisé
     pour les vélos...)
   - "Une collation d'arrivée "
   - Des dotations offertes par nos partenaires
@@ -47,6 +47,6 @@ plus_features:
   - "Un ride découverte semi-urbain le samedi après-midi d'environ 40km "
   - Un ravito surprise
   - Une soirée de présentation de l'évènement et des partenaires le samedi soir
-    à L'Etape 84
-  - Un repas à l'Etape 84 le samedi soir
+    à L'Étape 84
+  - Un repas à l'Étape 84 le samedi soir
 ---
