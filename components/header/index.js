@@ -5,8 +5,8 @@ import settings from "../../config.json";
 
 export default function Header({ siteName }) {
   return (
-    <header className="z-50">
-      <div className="container bg-feuillage">
+    <header className="z-50 bg-feuillage">
+      <div className="container">
         <nav className="px-6 md:px-12 py-2 flex flex-col md:flex-row justify-between items-stretch md:items-center">
           <div className="flex flex-grow items-center justify-between mb-4 md:mb-0">
             <Link href="/">
