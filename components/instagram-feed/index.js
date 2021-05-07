@@ -1,10 +1,12 @@
 import {Instagram} from "react-feather";
 import {useQuery} from "../../lib/query";
 
+const accessToken = process.env.NEXT_PUBLIC_IG_ACCESS_TOKEN;
+
 
 export default function InstagramFeed(){
   let posts = []
-  const {data, error, queried} = useQuery("https://graph.instagram.com/me/media?fields=id,media_url&access_token=IGQVJXbEN6VjZAKZA3lMUHJpcXo2NVBPOXZAYOEJmclM5and4MmtleG5od2czcUdFUHlnMmQ2MXRWeWJxX0RBNmZAfV19VY1hRR0QyXzNRelEtQ3ZAyVVdfM1JQQXl2VXI4WEtqRnZAQX1JNd2RJak8wd3E2eQZDZD");
+  const {data, error, queried} = useQuery(`https://graph.instagram.com/me/media?fields=id,media_url&access_token=${accessToken}`);
   
   if (data){
     posts = data.data.slice(0, 4);
