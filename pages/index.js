@@ -36,6 +36,8 @@ export default function Home({ allRoutesData, allSupportersData, pageData }) {
 
         <Supporters supporters={allSupportersData} />
 
+        <InstagramFeed />
+
       </div>
     </Layout>
   );

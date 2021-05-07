@@ -1,8 +1,17 @@
-import Image from "next/image";
-import Container from "../container";
 import {Instagram} from "react-feather";
+import {useQuery} from "../../lib/query";
 
-export default function InstagramFeed({posts}){
+const accessToken = process.env.NEXT_PUBLIC_IG_ACCESS_TOKEN;
+
+
+export default function InstagramFeed(){
+  let posts = []
+  const {data, error, queried} = useQuery(`https://graph.instagram.com/me/media?fields=id,media_url&access_token=${accessToken}`);
+  
+  if (data){
+    posts = data.data.slice(0, 4);
+  }
+
 
   return  (
     <section>
@@ -21,10 +30,10 @@ export default function InstagramFeed({posts}){
           <div className="container">
             <div className="inner-spacing">
               <ul className="flex flex-col md:flex-row -mx-3 z-20 relative">
-                {posts.map(({node: post}) => (
-                  <li className="shadow-2xl max-w-full md:w-1/4 rounded-xl overflow-hidden m-3" key={post.id}>
-                    <a target="_blank" href={`https://www.instagram.com/p/${post.shortcode}`}>
-                      <img src={post.thumbnail_src} alt={`image du post instagram ${post.id}`} />
+                {posts && posts.map((post) => (
+                  <li className="shadow-2xl max-w-full md:w-1/4 h-48 lg:h-72 rounded-xl overflow-hidden m-3" key={post.id}>
+                    <a target="_blank">
+                      <img className="object-cover h-full w-full" src={post.media_url} />
                     </a>
                   </li>
                 ))}
