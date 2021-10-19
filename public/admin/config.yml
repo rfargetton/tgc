@@ -53,13 +53,14 @@ collections:
     create: false
     delete: false
     files:
-      - label: "Home"
+      - label: "Accueil"
         name: "home"
         file: content/pages/home.md
         fields:
           - { name: "title", label: "Titre", widget: "string", default: "Home" }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text" }
+          - { name: "image", label: "Image", widget: "image" }
           - name: "gallery"
             label: "Galerie"
             widget: "list"
@@ -76,6 +77,7 @@ collections:
             }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text" }
+          - { name: "image", label: "Image", widget: "image" }
           - name: "concept_blocks"
             label: "blocs Esprit TGC"
             widget: "list"
@@ -118,6 +120,7 @@ collections:
             }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text" }
+          - { name: "image", label: "Image", widget: "image" }
           - name: "team"
             label: "équipe"
             widget: "list"
@@ -149,6 +152,7 @@ collections:
             }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text" }
+          - { name: "image", label: "Image", widget: "image" }
 
   - name: "settings"
     label: "Parametres"
