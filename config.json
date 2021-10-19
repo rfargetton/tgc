@@ -1,13 +1,13 @@
 {
+  "instagram_account": "touraine_gravel_challenge",
   "base_url": "https://www.tourainegravelchallenge.fr",
   "site_name": "Touraine Gravel Challenge",
   "logo": "/images/logo.svg",
-  "komoot_link": "https://www.komoot.com/",
+  "komoot_link": "https://www.komoot.fr/user/tourainegravelchallenge",
   "date": "2021-09-12",
   "facebook_link": "https://www.facebook.com/Touraine-gravel-challenge-102492681530119/",
-  "instagram_account": "touraine_gravel_challenge",
-  "register_link": "https://www.klikego.com/inscription/touraine-gravel-challenge-2021/cyclo/vtt/1591316274595-2",
   "location": "Tours, France",
+  "register_link": "https://www.klikego.com/inscription/touraine-gravel-challenge-2021/cyclo/vtt/1591316274595-2",
   "description": "Le Touraine Gravel Challenge est une épreuve de pur gravel se déroulant dans les environs de la ville de Tours.",
   "edition": 2
 }
