@@ -34,7 +34,9 @@ const colors = require('tailwindcss/colors');
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['hover']
+    },
   },
   plugins: [],
 }
