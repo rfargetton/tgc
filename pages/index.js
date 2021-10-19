@@ -1,5 +1,5 @@
-import { getAllFilesData } from "../lib/folder";
-import { getFile } from "../lib/file";
+import { getAllFilesData, getAllFilesDataWithPlaiceholder } from "../lib/folder";
+import { getFileWithPlaiceholder } from "../lib/file";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import RouteList from "../components/route-list";
@@ -20,7 +20,7 @@ export default function Home({ allRoutesData, allSupportersData, pageData }) {
     >
       <div>
         <Hero 
-          image={pageData.image}
+          image={pageData.imageBlur}
           intro={pageData.subheading}
           pageName="accueil"
         >
@@ -71,9 +71,9 @@ export async function getStaticProps() {
   //   console.log("Something went wrong while logging into Instagram", err)
   // }
 
-  const allRoutesData = await getAllFilesData("parcours");
+  const allRoutesData = await getAllFilesDataWithPlaiceholder("parcours");
   const allSupportersData = await getAllFilesData("partenaires");
-  const pageData = await getFile("pages", "home");
+  const pageData = await getFileWithPlaiceholder("pages", "home");
   return {
     props: {
       allRoutesData,

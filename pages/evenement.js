@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import { getFile } from "../lib/file";
-import { getAllFilesData } from "../lib/folder";
+import { getFileWithPlaiceholder } from "../lib/file";
+import { getAllFilesDataWithPlaiceholder } from "../lib/folder";
 import ContentBlock from "../components/content-block";
 import RouteList from "../components/route-list";
 import Infos from "../components/infos";
@@ -19,7 +19,7 @@ export default function About({ pageData, allRoutesData }) {
     >
       <div>
         <Hero 
-          image={pageData.image}
+          image={pageData.imageBlur}
           intro={pageData.subheading}
           bgColor="asphalte"
           pageName="événement"
@@ -58,8 +58,8 @@ export default function About({ pageData, allRoutesData }) {
 }
 
 export async function getStaticProps() {
-  const pageData = await getFile("pages", "evenement");
-  const allRoutesData = await getAllFilesData("parcours");
+  const pageData = await getFileWithPlaiceholder("pages", "evenement");
+  const allRoutesData = await getAllFilesDataWithPlaiceholder("parcours");
 
   return {
     props: {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import BlurhashImage from "../blurhash-image";
 
 export default function Hero({image, intro, children, pageName}){
 
@@ -12,12 +12,8 @@ export default function Hero({image, intro, children, pageName}){
             </div>
             <div className="h-136 ml-auto w-full md:w-9/12 relative rounded-0 md:rounded-xl overflow-hidden bg-feuillage-dark">
               <div className="absolute z-10 top-0 bottom-0 w-1/2 bg-gradient-to-r from-black to-transparent" ></div>
-              <Image
-                src={image}
-                layout="fill"
-                objectFit="cover"
-                priority={true}
-                alt={`image principale de la page ${pageName}`}
+              <BlurhashImage 
+                imageProps={image}
               />
             </div>
           </div>

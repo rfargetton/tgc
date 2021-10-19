@@ -17,7 +17,7 @@ export default function RouteList({ routes, children }) {
                   <RouteCard 
                     title={route.title}
                     description={route.description}
-                    image={route.image}
+                    image={route.imageBlur}
                     link={settings.register_link}
                     distance={route.distance}
                     elevation={route.elevation}

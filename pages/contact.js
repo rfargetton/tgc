@@ -1,4 +1,4 @@
-import {getFile} from "../lib/file";
+import {getFileWithPlaiceholder} from "../lib/file";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import ContactForm from "../components/contact-form";
@@ -12,7 +12,7 @@ export default function Contact({pageData}){
       image={pageData.image}
     >
         <Hero 
-          image={pageData.image}
+          image={pageData.imageBlur}
           pageName="contact"
         >
           <h1 className="mb-6 w-full lg:w-1/2 text-white">{pageData.heading}</h1>
@@ -25,7 +25,7 @@ export default function Contact({pageData}){
 }
 
 export async function getStaticProps(){
-  const pageData = await getFile("pages", "contact");
+  const pageData = await getFileWithPlaiceholder("pages", "contact");
   return {
     props: {
       pageData

@@ -1,8 +1,9 @@
 import {ArrowRight, TrendingUp} from "react-feather";
+import BlurhashImage from "../blurhash-image";
 import Image from "next/image";
 
 import Card from "../card";
-import { route } from "next/dist/next-server/server/router";
+import { route } from "next/router";
 
 export default function RouteCard({image, title, description, link, distance, elevation}) {
   return (
@@ -10,11 +11,9 @@ export default function RouteCard({image, title, description, link, distance, el
       <div className="flex flex-col h-full">
         <div className="h-48 md:h-72 w-full relative">
           <div className="absolute z-20 h-1/2 bottom-0 w-full bg-gradient-to-t from-black to-transparent"></div>
-          <Image 
-            src={image}
-            layout="fill"
-            objectFit="cover"
-            alt={`image du parcours ${title}`}
+
+          <BlurhashImage 
+            imageProps={image}
           />
         </div>
         <div className="-mt-28 relative z-20 flex flex-col items-start p-6 flex-grow">

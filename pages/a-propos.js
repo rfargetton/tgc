@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import { getFile } from "../lib/file";
+import { getFileWithPlaiceholder } from "../lib/file";
 import { getAllFilesData } from "../lib/folder";
 import Supporters from "../components/supporters-list";
 import Team from "../components/team";
@@ -18,7 +18,7 @@ export default function About({ pageData, allSupportersData }) {
     >
       <div>
         <Hero 
-          image={pageData.image}
+          image={pageData.imageBlur}
           intro={pageData.subheading}
           pageName="à propos"
         >
@@ -45,7 +45,7 @@ export default function About({ pageData, allSupportersData }) {
 }
 
 export async function getStaticProps() {
-  const pageData = await getFile("pages", "a-propos");
+  const pageData = await getFileWithPlaiceholder("pages", "a-propos");
   const allSupportersData = await getAllFilesData("partenaires");
 
   return {
