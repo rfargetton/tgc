@@ -4,6 +4,8 @@ backend:
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
+publish_mode: "editorial_workflow"
+locale: "fr"
 
 slug:
   encoding: "ascii"
@@ -14,25 +16,42 @@ collections:
     label: "Parcours"
     folder: "content/parcours"
     create: true
-    fields: 
-      - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", default: "/images/default.jpg"}
-      - {label: "Distance", name: "distance", widget: "number", hint: "distance du parcours en kilomètres"}
-      - {label: "Dénivelé", name: "elevation", widget: "number", hint: "dénivelé positif du parcours en mètres"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Lien", name: "link"}
-    
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          default: "/images/default.jpg",
+        }
+      - {
+          label: "Distance",
+          name: "distance",
+          widget: "number",
+          hint: "distance du parcours en kilomètres",
+        }
+      - {
+          label: "Dénivelé",
+          name: "elevation",
+          widget: "number",
+          hint: "dénivelé positif du parcours en mètres",
+        }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Lien", name: "link" }
+
   - name: "partenaires"
     label: "Partenaires"
     folder: "content/partenaires"
     create: true
     fields:
-      - {label: "Titre", name: "title"}
-      - {label: "Logo", name: "logo", widget: "image"}
-      - {label: "Lien", name: "link"}
+      - { label: "Titre", name: "title" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Lien", name: "link" }
 
   - name: "pages"
     label: "Pages"
+    create: false
+    delete: false
     files:
       - label: "Home"
         name: "home"
@@ -40,86 +59,138 @@ collections:
         fields:
           - { name: "title", label: "Titre", widget: "string", default: "Home" }
           - { name: "heading", label: "Accroche" }
-          - { name: "subheading", label: "Sous-Texte", widget: "text"  }
+          - { name: "subheading", label: "Sous-Texte", widget: "text" }
           - name: "gallery"
             label: "Galerie"
             widget: "list"
-            field: {label: "Image", name: "image", widget: "image"}
+            field: { label: "Image", name: "image", widget: "image" }
       - label: "Événement"
         name: "evenement"
         file: content/pages/evenement.md
         fields:
-          - { name: "title", label: "Titre", widget: "string", default: "Événement" }
+          - {
+              name: "title",
+              label: "Titre",
+              widget: "string",
+              default: "Événement",
+            }
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text" }
           - name: "concept_blocks"
             label: "blocs Esprit TGC"
             widget: "list"
             fields:
-              - {name: "title", label: "Titre"}
-              - {name: "description", label: "Description", widget: "text"}
-              - {name: "image", label: "Image", widget: "image"}
+              - { name: "title", label: "Titre" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
           - name: "options"
             label: "Options"
             widget: "list"
-            fields: 
-              - {name: "description", label: "Descriptif", hint: "Descriptif de l'option"}
-              - {name: "price", label: "Tarif", widget: "number", hint: "Tarif en euros de l'option"}
+            fields:
+              - {
+                  name: "description",
+                  label: "Descriptif",
+                  hint: "Descriptif de l'option",
+                }
+              - {
+                  name: "price",
+                  label: "Tarif",
+                  widget: "number",
+                  hint: "Tarif en euros de l'option",
+                }
           - name: "basic_features"
             label: "Inclus dans la tarification de base"
             widget: "list"
-            field: {name: "description", label: "Descriptif"}
+            field: { name: "description", label: "Descriptif" }
           - name: "plus_features"
             label: "Inclus dans la tarification supérieure"
             widget: "list"
-            field: {name: "description", label: "Descriptif"}
+            field: { name: "description", label: "Descriptif" }
       - label: "À Propos"
         name: "a-propos"
         file: content/pages/a-propos.md
         fields:
-          - { name: "title", label: "Titre", widget: "string", default: "About" }
+          - {
+              name: "title",
+              label: "Titre",
+              widget: "string",
+              default: "About",
+            }
           - { name: "heading", label: "Accroche" }
-          - { name: "subheading", label: "Sous-Texte", widget: "text"  }
+          - { name: "subheading", label: "Sous-Texte", widget: "text" }
           - name: "team"
             label: "équipe"
             widget: "list"
             fields:
-              - {name: "name", label: "Nom"}
-              - {name: "bio", label: "Bio", widget: "text"}
-              - {name: "image", label: "image", widget: "image"}
+              - { name: "name", label: "Nom" }
+              - { name: "bio", label: "Bio", widget: "text" }
+              - { name: "image", label: "image", widget: "image" }
           - name: "press"
             label: "Presse"
             widget: "list"
             fields:
-              - {name: "title", label: "Titre", hint: "titre de l'article"}
-              - {name: "image", label: "Image", widget: "image"}
-              - {name: "publication", label: "Publication", hint: "nom de la publication. ex: La nouvelle république"}
-              - {name: "link", label: "Lien", hint: "lien vesr l'article"}
+              - { name: "title", label: "Titre", hint: "titre de l'article" }
+              - { name: "image", label: "Image", widget: "image" }
+              - {
+                  name: "publication",
+                  label: "Publication",
+                  hint: "nom de la publication. ex: La nouvelle république",
+                }
+              - { name: "link", label: "Lien", hint: "lien vesr l'article" }
       - label: "Contact"
         name: "contact"
         file: content/pages/contact.md
         fields:
-          - { name: "title", label: "Titre", widget: "string", default: "Contact" }
+          - {
+              name: "title",
+              label: "Titre",
+              widget: "string",
+              default: "Contact",
+            }
           - { name: "heading", label: "Accroche" }
-          - { name: "subheading", label: "Sous-Texte", widget: "text"  }
+          - { name: "subheading", label: "Sous-Texte", widget: "text" }
 
   - name: "settings"
     label: "Parametres"
     delete: false
-    files: 
+    files:
       - label: "General"
         name: "general"
         file: "config.json"
         description: "General site settings"
         fields:
-          - {label: "URL", name: "base_url", widget: "string", hint: "Do not enter trailing slash of the URL"}
-          - {label: "Site Name", name: "site_name", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Logo", name: "logo", widget: "image"}
-          - {label: "Facebook", name: "facebook_link"}
-          - {label: "Komoot", name: "komoot_link"}
-          - {label: "Instagram", name: "instagram_account", hint: "renseigner le login du compte Instagram"}
-          - {label: "Lien Inscription", name: "register_link"}
-          - { name: "edition", label: "Edition", widget: "number", hint: "numéro de l'edition"}
-          - { name: "location", label: "Lieu", hint: "Lieu ou se déroule l'événement"}
-          - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", hint: "Date de l'événement"}
+          - {
+              label: "URL",
+              name: "base_url",
+              widget: "string",
+              hint: "Do not enter trailing slash of the URL",
+            }
+          - { label: "Site Name", name: "site_name", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Facebook", name: "facebook_link" }
+          - { label: "Komoot", name: "komoot_link" }
+          - {
+              label: "Instagram",
+              name: "instagram_account",
+              hint: "renseigner le login du compte Instagram",
+            }
+          - { label: "Lien Inscription", name: "register_link" }
+          - {
+              name: "edition",
+              label: "Edition",
+              widget: "number",
+              hint: "numéro de l'edition",
+            }
+          - {
+              name: "location",
+              label: "Lieu",
+              hint: "Lieu ou se déroule l'événement",
+            }
+          - {
+              name: "date",
+              label: "Date",
+              widget: "datetime",
+              format: "YYYY-MM-DD",
+              hint: "Date de l'événement",
+            }
