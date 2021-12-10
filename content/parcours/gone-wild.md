@@ -8,5 +8,5 @@ description: "Tu as aimé les précédentes éditions de la TGC, mais tu aurais 
   week-end? La TGC Gone Wild est faite pour toi : les 7 et 8 mai 2022, pars à la
   découverte de la Touraine sauvage, et même un peu plus loin, en mode
   bikepacking / bivouac..."
-link: https://www.klikego.com/inscription/touraine-gravel-challenge-gone-wild--1-2022/cyclo/vtt/1591316274595-4
+link: https://www.klikego.com/
 ---
