@@ -31,26 +31,10 @@ options:
     price: 30
   - description: Parcours 170km le dimanche 11 septembre 2022
     price: 30
-  - description: Week-end complet du 10 et 11 septembre 2022, avec option soirée à
+  - description: Week-end complet des 10 et 11 septembre 2022, avec option soirée à
       l'Etape 84
     price: 80
 basic_features:
   - "Une trace GPS certifiée 100% esprit Gravel "
-  - Des ravitaillements sur le parcours
-  - Des photographes sur le parcours
-  - "Deux QOM et KOM secrets avec de belles dotations "
-  - Un petit-déjeuner d'accueil le dimanche matin à l’Étape 84
-  - L'Étape 84, un lieu logistique de qualité (nuitée, repas, local sécurisé
-    pour les vélos...)
-  - "Une collation d'arrivée "
-  - Des dotations offertes par nos partenaires
-  - Un pack Komoot multi-régions
-  - Un “top tube stickers” offert par Komoot aux participant-e-s, présentant le
-    profil de dénivelé des épreuves et les infos importantes
-plus_features:
-  - "Un ride découverte semi-urbain le samedi après-midi d'environ 40km "
-  - Un ravito surprise
-  - Une soirée de présentation de l'évènement et des partenaires le samedi soir
-    à L'Étape 84
-  - Un repas à l'Étape 84 le samedi soir
+plus_features: []
 ---
