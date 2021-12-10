@@ -5,7 +5,7 @@ subheading: Le Touraine Gravel Challenge est une épreuve de pur gravel se
   déroulant dans les environs de la ville de Tours. Deux parcours pour découvrir
   parmi les plus beaux châteaux et villages des vals de Loire, du Cher et de
   l’Indre.
-image: /images/uploads/hero-index.jpg
+image: /images/uploads/loches_tgc.jpg
 gallery:
   - /images/uploads/galerie-photos-2.jpg
   - /images/uploads/galerie-photos-3.jpg
