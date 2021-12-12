@@ -1,8 +1,8 @@
 ---
 title: Les événements
 heading: Découvrez les événements
-subheading: Le Touraine Gravel Challenge est une épreuve de pur gravel se
-  déroulant dans les environs de la ville de Tours. Trois parcours pour
+subheading: Le Touraine Gravel Challenge est une série d'épreuves de pur gravel
+  se déroulant dans les environs de la ville de Tours. Trois parcours pour
   découvrir parmi les plus beaux châteaux et villages des vals de Loire, du Cher
   et de l’Indre.
 image: /images/uploads/hero-evenement.png
@@ -27,14 +27,17 @@ concept_blocks:
 options:
   - description: Le week-end TGC Gone Wild, les 7 et 8 mai 2022
     price: 70
-  - description: Parcours 90km le samedi 10 septembre 2022
+  - description: Parcours 90km, le samedi 10 septembre 2022 (soirée à l'Étape 84 en option)
     price: 30
-  - description: Parcours 170km le dimanche 11 septembre 2022
+  - description: Parcours 170km le dimanche 11 septembre 2022 (soirée à l'Étape 84
+      en option)
     price: 30
-  - description: Week-end complet des 10 et 11 septembre 2022, avec option soirée à
-      l'Etape 84
-    price: 80
+  - description: Le week-end complet, les 10 et 11 septembre 2022, avec soirée à l'Étape 84
+    price: 70
 basic_features:
-  - "Une trace GPS certifiée 100% esprit Gravel "
+  - Une trace GPS, dans l'esprit Gravel, bien "roulante". Un ou plusieurs
+    ravitaillements, selon le parcours. Des photographes et des belles
+    dotations. Le café et les croissants au départ, ainsi qu'une collation
+    d'arrivée à l'Étape 84, et plein d'autres surprises...
 plus_features: []
 ---
