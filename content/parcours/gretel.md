@@ -1,6 +1,6 @@
 ---
 title: Gretel
-image: /images/uploads/galerie-photos-13.jpg
+image: /images/uploads/dscf1709.resized.jpg
 distance: 90
 elevation: 600
 description: C'est notre randonnée "découverte" mais pas moins exigeante pour
