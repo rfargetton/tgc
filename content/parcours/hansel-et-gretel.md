@@ -1,6 +1,6 @@
 ---
 title: Hansel et Gretel
-image: /images/uploads/img_1903.resized.jpg
+image: /images/uploads/img_1903.jpg
 distance: 250
 elevation: 1800
 description: Tu veux passer un week-end gravel exceptionnel, les 10 et 11
