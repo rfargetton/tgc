@@ -37,8 +37,8 @@ options:
 basic_features:
   - Une trace GPS, dans l'esprit Gravel, bien "roulante". Un ou plusieurs
     ravitaillements, selon le parcours (sur le lieu de bivouac pour la Gone
-    Wild). Des photographes et des belles dotations. Le café et les croissants
-    au départ, ainsi qu'une collation d'arrivée à l'Étape 84. Et plein d'autres
+    Wild). Des photographes et de belles dotations. Le café et les croissants au
+    départ, ainsi qu'une collation d'arrivée à l'Étape 84. Et plein d'autres
     surprises...
 plus_features: []
 ---
