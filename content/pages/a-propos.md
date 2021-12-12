@@ -35,5 +35,5 @@ press:
   - link: https://www.victoire-cycles.com/blog/lan-dernier-la-tgc-setait-tenue-sous-des-torrents
     publication: Blog des cycles Victoire
     title: Le Touraine Gravel Challenge 2
-    image: /images/uploads/victoire_img_1817.resized.jpg
+    image: /images/uploads/victoire_img_1817.jpg
 ---
