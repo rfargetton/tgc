@@ -9,8 +9,9 @@ import InstagramFeed from "../components/instagram-feed";
 import Supporters from "../components/supporters-list";
 import settings from "../config.json";
 
-export default function Home({ allRoutesData, allSupportersData, pageData }) {
+export default function Home({ allRoutesData, allSupportersData, pageData, nextEventData }) {
 
+  console.log(allRoutesData);
 
   return (
     <Layout 
@@ -25,13 +26,20 @@ export default function Home({ allRoutesData, allSupportersData, pageData }) {
           pageName="accueil"
         >
           <h1 className="mb-6 w-full lg:w-1/2 text-white">{pageData.heading}</h1>
-          <InfoCard />
+          <InfoCard 
+            name={nextEventData.title}
+            location={nextEventData.location}
+            date={nextEventData.date}
+            link={nextEventData.link}
+          />
         </Hero>
+
 
         <RouteList routes={allRoutesData}>
           <h2 className="text-center"><span className="section-title bg-automne">Les parcours</span></h2>
         </RouteList>
 
+ 
         <Gallery images={pageData.gallery} />
 
         <Supporters supporters={allSupportersData} />
@@ -74,11 +82,14 @@ export async function getStaticProps() {
   const allRoutesData = await getAllFilesDataWithPlaiceholder("parcours");
   const allSupportersData = await getAllFilesData("partenaires");
   const pageData = await getFileWithPlaiceholder("pages", "home");
+
+  const nextEventData = await getFileWithPlaiceholder("parcours", pageData.nextEvent);
   return {
     props: {
       allRoutesData,
       allSupportersData,
-      pageData
+      pageData,
+      nextEventData
     },
   };
 }

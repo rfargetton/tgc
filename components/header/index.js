@@ -15,12 +15,9 @@ export default function Header({ siteName }) {
             <a href={settings.register_link} target="_blank" className="md-hidden btn">S'inscrire</a>
           </div>
           <div className="flex overflow-x-auto -mx-2">
-            <NavLink href="/evenement">L'événement</NavLink>
+            <NavLink href="/evenement">Les événements</NavLink>
             <NavLink href="/a-propos">À propos</NavLink>
             <NavLink href="/contact">Contact</NavLink>
-          </div>
-          <div className="sm-hidden ml-6">
-            <a href={settings.register_link} target="_blank" className="btn">S'inscrire</a> 
           </div>
         </nav>
       </div>

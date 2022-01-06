@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import { getFileWithPlaiceholder } from "../lib/file";
-import { getAllFilesDataWithPlaiceholder } from "../lib/folder";
 import ContentBlock from "../components/content-block";
 import RouteList from "../components/route-list";
 import Infos from "../components/infos";
@@ -9,6 +8,7 @@ import FeaturesList from "../components/features-list";
 import PricesList from "../components/prices-list";
 import PageNav from "../components/page-nav";
 import settings from "../config.json";
+import { getAllFilesDataWithPlaiceholder } from "../lib/folder";
 
 export default function About({ pageData, allRoutesData }) {
   return (
@@ -44,12 +44,11 @@ export default function About({ pageData, allRoutesData }) {
           <div>
             <h3 className="text-automne">Tarifs d’inscription</h3>
           </div>
-          <PricesList description="Pour chacun des parcours, deux options s’offrent à toi :" options={pageData.options} />
+          <PricesList description="Pour chacun des parcours, plusieurs options s’offrent à toi :" options={pageData.options} />
           <div>
             <h3 className="text-automne">Que comprend mon inscription ?</h3>
           </div>
-          <FeaturesList description="Pour chacune des tarifications, ton inscription comprend" features={pageData.basic_features} />
-          <FeaturesList description="Pour celles et ceux participant au week-end complet, l’inscription inclus également :" features={pageData.plus_features} />
+          <FeaturesList  features={pageData.basic_features} />
         </Infos>
 
       </div>

@@ -19,6 +19,16 @@ collections:
     fields:
       - { label: "Titre", name: "title", widget: "string" }
       - {
+          name: "date",
+          label: "Date",
+          hint: "Date de l'événement",
+        }
+      - {
+          name: "location",
+          label: "Lieu",
+          hint: "Lieu ou se déroule l'événement",
+        }
+      - {
           label: "Image",
           name: "image",
           widget: "image",
@@ -61,6 +71,7 @@ collections:
           - { name: "heading", label: "Accroche" }
           - { name: "subheading", label: "Sous-Texte", widget: "text" }
           - { name: "image", label: "Image", widget: "image" }
+          - { name: "nextEvent", label: "Prochain évènement", widget: "relation", collection: "parcours", value_field: "{{slug}}", search_fields: ["title"]}
           - name: "gallery"
             label: "Galerie"
             widget: "list"
@@ -185,16 +196,4 @@ collections:
               label: "Edition",
               widget: "number",
               hint: "numéro de l'edition",
-            }
-          - {
-              name: "location",
-              label: "Lieu",
-              hint: "Lieu ou se déroule l'événement",
-            }
-          - {
-              name: "date",
-              label: "Date",
-              widget: "datetime",
-              format: "YYYY-MM-DD",
-              hint: "Date de l'événement",
             }

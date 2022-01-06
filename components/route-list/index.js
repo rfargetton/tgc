@@ -18,9 +18,10 @@ export default function RouteList({ routes, children }) {
                     title={route.title}
                     description={route.description}
                     image={route.imageBlur}
-                    link={settings.register_link}
+                    link={route.link}
                     distance={route.distance}
                     elevation={route.elevation}
+                    date={route.date}
                   />   
                 </li>
               ))}

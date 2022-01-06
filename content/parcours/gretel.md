@@ -1,6 +1,8 @@
 ---
 title: Gretel
 image: /images/uploads/dscf1709.jpg
+date: 10 septembre 2022
+location: "Tours, France"
 distance: 90
 elevation: 600
 description: C'est notre randonnée "découverte" mais pas moins exigeante pour
