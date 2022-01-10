@@ -19,7 +19,7 @@ export default function InfoCard({name, location, date, link}){
 
           <div className="my-2 md:mx-2">
             <div className="text-automne text-sm uppercase">quand</div>
-            <div className="text-asphalte font-medium">{date}</div>          
+            <div className="text-asphalte font-medium"><Date dateString={date} /></div>          
           </div>
 
           <div className="my-2 md:mx-2 self-end md:self-center">

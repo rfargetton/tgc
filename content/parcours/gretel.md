@@ -1,7 +1,7 @@
 ---
 title: Gretel
 image: /images/uploads/dscf1709.jpg
-date: 10 septembre 2022
+date: 2022-09-11
 location: "Tours, France"
 distance: 90
 elevation: 600

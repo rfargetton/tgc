@@ -1,7 +1,7 @@
 ---
 title: Hansel et Gretel
 image: /images/uploads/img_1903.jpg
-date: 10 et 11 septembre 2022
+date: 2022-09-11
 location: "Tours, France"
 distance: 250
 elevation: 1800

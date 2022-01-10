@@ -16,7 +16,7 @@ export default function RouteCard({image, title, date, description, link, distan
           />
         </div>
         <div className="-mt-32 relative z-20 flex flex-col items-start p-6 flex-grow">
-          <div className="text-white">{date}</div>          
+          <div className="text-white"><Date dateString={date} /></div>          
           <h3 className="mt-0 text-white">{title}</h3>
           <RouteStats distance={distance} elevation={elevation} />
           <p className="my-6">{description}</p>

@@ -1,5 +1,6 @@
-import { getAllFilesData, getAllFilesDataWithPlaiceholder } from "../lib/folder";
+import { getAllFilesData } from "../lib/folder";
 import { getFileWithPlaiceholder } from "../lib/file";
+import { getParcoursData, getAllParcoursDataWithPlaiceholder } from "../lib/parcours";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import RouteList from "../components/route-list";
@@ -79,17 +80,17 @@ export async function getStaticProps() {
   //   console.log("Something went wrong while logging into Instagram", err)
   // }
 
-  const allRoutesData = await getAllFilesDataWithPlaiceholder("parcours");
+  const allRoutesData = await getAllParcoursDataWithPlaiceholder();
   const allSupportersData = await getAllFilesData("partenaires");
   const pageData = await getFileWithPlaiceholder("pages", "home");
 
-  const nextEventData = await getFileWithPlaiceholder("parcours", pageData.nextEvent);
+  const nextEventData = await getParcoursData(pageData.nextEvent);
   return {
     props: {
-      allRoutesData,
       allSupportersData,
       pageData,
-      nextEventData
+      nextEventData,
+      allRoutesData
     },
   };
 }
