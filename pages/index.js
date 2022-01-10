@@ -12,7 +12,7 @@ import settings from "../config.json";
 
 export default function Home({ allRoutesData, allSupportersData, pageData, nextEventData }) {
 
-  console.log(allRoutesData);
+  console.log(nextEventData);
 
   return (
     <Layout 

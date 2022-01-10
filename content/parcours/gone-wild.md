@@ -2,6 +2,7 @@
 title: TGC Gone Wild
 image: /images/uploads/gonewild_image.jpg
 date: 2022-05-07
+dateEnd: 2022-05-08
 location: "Tours, France"
 distance: 400
 elevation: 3000

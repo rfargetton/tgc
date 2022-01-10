@@ -22,6 +22,7 @@ export default function RouteList({ routes, children }) {
                     distance={route.distance}
                     elevation={route.elevation}
                     date={route.date}
+                    dateEnd={route.dateEnd}
                   />   
                 </li>
               ))}
