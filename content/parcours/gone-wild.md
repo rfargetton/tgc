@@ -1,7 +1,6 @@
 ---
 title: TGC Gone Wild
 date: 7 et 8 mai 2022
-dateString: 2022-05-07
 location: Tours, France
 image: /images/uploads/gonewild_image.jpg
 distance: 400

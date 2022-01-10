@@ -24,13 +24,6 @@ collections:
           hint: "Date de l'événement",
         }
       - {
-          name: "dateString",
-          label: "Date String",
-          widget: "datetime",
-          format: "YYYY-MM-DD",
-          dateFormat: "YYYY-MM-DD"
-        }
-      - {
           name: "location",
           label: "Lieu",
           hint: "Lieu ou se déroule l'événement",
