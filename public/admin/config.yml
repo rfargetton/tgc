@@ -25,10 +25,10 @@ collections:
           format: "YYYY-MM-DD",
           dateFormat: "YYYY-MM-DD",
           hint: "Date de l'événement",
-          required
+          required: true,
         }
       - {
-          name: "date",
+          name: "dateEnd",
           label: "Date de fin",
           widget: "datetime",
           format: "YYYY-MM-DD",
