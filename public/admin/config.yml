@@ -26,6 +26,16 @@ collections:
           format: "YYYY-MM-DD",
           dateFormat: "YYYY-MM-DD",
           hint: "Date de l'événement",
+          required
+        }
+      - {
+          name: "date",
+          label: "Date de fin",
+          widget: "datetime",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          dateFormat: "YYYY-MM-DD",
+          hint: "facultatif, à renseigner quand l'évènement dure plus d'une journée",
         }
       - {
           name: "location",
