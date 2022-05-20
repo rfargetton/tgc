@@ -21,6 +21,10 @@ collections:
       - {
           name: "date",
           label: "Date",
+          widget: "datetime",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          dateFormat: "YYYY-MM-DD",
           hint: "Date de l'événement",
         }
       - {

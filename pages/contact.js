@@ -1,4 +1,4 @@
-import {getFileWithPlaiceholder} from "../lib/file";
+import {getFileDataWithPlaiceholder} from "../lib/folder";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import ContactForm from "../components/contact-form";
@@ -25,7 +25,7 @@ export default function Contact({pageData}){
 }
 
 export async function getStaticProps(){
-  const pageData = await getFileWithPlaiceholder("pages", "contact");
+  const pageData = await getFileDataWithPlaiceholder("pages", "contact");
   return {
     props: {
       pageData

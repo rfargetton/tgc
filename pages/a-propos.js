@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import { getFileWithPlaiceholder } from "../lib/file";
-import { getAllFilesData } from "../lib/folder";
+import { getAllFilesData, getFileDataWithPlaiceholder } from "../lib/folder";
 import Supporters from "../components/supporters-list";
 import Team from "../components/team";
 import Press from "../components/press";
@@ -45,7 +44,7 @@ export default function About({ pageData, allSupportersData }) {
 }
 
 export async function getStaticProps() {
-  const pageData = await getFileWithPlaiceholder("pages", "a-propos");
+  const pageData = await getFileDataWithPlaiceholder("pages", "a-propos");
   const allSupportersData = await getAllFilesData("partenaires");
 
   return {

@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import { getFileWithPlaiceholder } from "../lib/file";
 import ContentBlock from "../components/content-block";
 import RouteList from "../components/route-list";
 import Infos from "../components/infos";
@@ -8,7 +7,7 @@ import FeaturesList from "../components/features-list";
 import PricesList from "../components/prices-list";
 import PageNav from "../components/page-nav";
 import settings from "../config.json";
-import { getAllFilesDataWithPlaiceholder } from "../lib/folder";
+import { getFileDataWithPlaiceholder, getAllFilesDataWithPlaiceholder } from "../lib/folder";
 
 export default function About({ pageData, allRoutesData }) {
   return (
@@ -57,7 +56,7 @@ export default function About({ pageData, allRoutesData }) {
 }
 
 export async function getStaticProps() {
-  const pageData = await getFileWithPlaiceholder("pages", "evenement");
+  const pageData = await getFileDataWithPlaiceholder("pages", "evenement");
   const allRoutesData = await getAllFilesDataWithPlaiceholder("parcours");
 
   return {
