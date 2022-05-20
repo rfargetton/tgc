@@ -25,7 +25,6 @@ collections:
           format: "YYYY-MM-DD",
           dateFormat: "YYYY-MM-DD",
           hint: "Date de l'événement",
-          required: true,
         }
       - {
           name: "dateEnd",
@@ -34,6 +33,7 @@ collections:
           format: "YYYY-MM-DD",
           dateFormat: "YYYY-MM-DD",
           hint: "facultatif, à renseigner quand l'évènement s'étend sur plus d'une journée",
+          required: false,
         }
       - {
           name: "location",
