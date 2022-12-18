@@ -6,7 +6,7 @@ subheading: Le Touraine Gravel Challenge est une série d'épreuves de pur grave
   découvrir parmi les plus beaux châteaux et villages des vals de Loire, du Cher
   et de l’Indre.
 image: /images/uploads/loches_tgc.jpg
-nextEvent: hansel-et-gretel
+nextEvent: gone-wild
 gallery:
   - /images/uploads/galerie-photos-2.jpg
   - /images/uploads/galerie-photos-3.jpg
