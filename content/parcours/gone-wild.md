@@ -1,7 +1,7 @@
 ---
 title: TGC Gone Wild
 date: 2023-05-20
-dateEnd: ""
+dateEnd: 2023-05-21
 location: Tours, France
 image: /images/uploads/gonewild_image.jpg
 distance: 400
