@@ -32,7 +32,7 @@ options:
   - description: Parcours 170km le dimanche 10 septembre 2023 (soirée à l'Étape 84
       en option)
     price: 30
-  - description: Le week-end complet, les 9 et 10 septembre 2022, avec soirée à l'Étape 84
+  - description: Le week-end complet, les 9 et 10 septembre 2023, avec soirée à l'Étape 84
     price: 70
 basic_features:
   - Une trace GPS, dans l'esprit Gravel, bien "roulante". Un ou plusieurs
