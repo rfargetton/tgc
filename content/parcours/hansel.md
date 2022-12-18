@@ -1,9 +1,9 @@
 ---
 title: Hansel
-image: /images/uploads/galerie-photos-2.jpg
-date: 2022-09-11
+date: 2023-09-10
 dateEnd: ""
-location: "Tours, France"
+location: Tours, France
+image: /images/uploads/galerie-photos-2.jpg
 distance: 170
 elevation: 1200
 description: "Le mot challenge ici n'est pas usurpé ! Il te faudra entre 8 et 11
