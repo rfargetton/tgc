@@ -11,5 +11,5 @@ description: Tu veux passer un week-end gravel exceptionnel, les 9 et 10
   la diversité de la Touraine  ou tout simplement passer un bon moment, cette
   option est pour toi, avec la soirée inclue à L'Étape 84 (possibilité de
   réserver la nuitée à tarif préférentiel).
-link: https://www.klikego.com/inscription/touraine-gravel-challenge--3-petit-parcours-90-km-samedi-2022/cyclo/vtt/1591316274595-5
+link: https://www.klikego.com/inscription/touraine-gravel-challenge--4-2023/cyclo/vtt/1591316274595-8
 ---
