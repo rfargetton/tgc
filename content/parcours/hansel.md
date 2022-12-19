@@ -11,5 +11,5 @@ description: "Le mot challenge ici n'est pas usurpé ! Il te faudra entre 8 et 1
   participant(e)s aguerri(e)s à la longue distance. Une belle et grande journée
   sur le vélo avec la découverte des plus beaux châteaux de la Touraine sur un
   terrain varié et bien \"graveleux\" ! "
-link: https://www.klikego.com/inscription/touraine-gravel-challenge--3-petit-parcours-90-km-samedi-2022/cyclo/vtt/1591316274595-5
+link: https://www.klikego.com/inscription/touraine-gravel-challenge--4-2023/cyclo/vtt/1591316274595-8
 ---
