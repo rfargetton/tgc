@@ -1,5 +1,5 @@
 ---
-title: TGC Gone Wild
+title: "TGC Gone Wild #2"
 date: 2023-05-20
 dateEnd: 2023-05-21
 location: Tours, France
@@ -12,5 +12,5 @@ description: >-
   Gone Wild est faite pour toi : les 7 et 8 mai 2022, 
 
   échappe-toi en mode bikepacking par les chemins et les petites routes de la Touraine sauvage (et même au-delà...). Ambiance bivouac et feu de camp, dépaysement garanti !
-link: https://www.klikego.com/inscription/touraine-gravel-challenge-gone-wild--1-2022/cyclo/vtt/1591316274595-4
+link: https://www.klikego.com/inscription/touraine-gravel-challenge-gone-wild--2-2023/cyclo/vtt/1591316274595-7
 ---
