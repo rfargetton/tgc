@@ -22,6 +22,9 @@ team:
   - name: Marion
     bio: Marion, notre œil de lynx souvent cachée derrière son appareil
     image: /images/uploads/marion.jpg
+  - name: Jean-Pierre
+    bio: Jean-Pierre, ou quand le ravito devient un art
+    image: /images/uploads/jp.jpg
 press:
   - title: Touraine Gravel Challenge ou comment salir un vélo tout neuf
     image: /images/uploads/gravel-touraine-challenge-mr4-07.jpg
