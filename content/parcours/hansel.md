@@ -3,7 +3,7 @@ title: Hansel
 date: 2023-09-10
 dateEnd: ""
 location: Tours, France
-image: /images/uploads/galerie-photos-2.jpg
+image: /images/uploads/sophie_champchevrier.jpg
 distance: 170
 elevation: 1200
 description: "Le mot challenge ici n'est pas usurpé ! Il te faudra entre 8 et 11
