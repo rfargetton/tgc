@@ -3,7 +3,7 @@ title: "TGC Gone Wild #2"
 date: 2023-05-20
 dateEnd: 2023-05-21
 location: Tours, France
-image: /images/uploads/gonewild_image.jpg
+image: /images/uploads/luynes.jpg
 distance: 400
 elevation: 3000
 description: >-
