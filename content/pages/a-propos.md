@@ -19,6 +19,9 @@ team:
   - name: Fabien
     bio: Notre community manager et trace.
     image: /images/uploads/fabien.jpg
+  - name: Marion
+    bio: Marion, notre œil de lynx souvent cachée derrière son appareil
+    image: /images/uploads/marion.jpg
 press:
   - title: Touraine Gravel Challenge ou comment salir un vélo tout neuf
     image: /images/uploads/gravel-touraine-challenge-mr4-07.jpg
