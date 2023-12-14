@@ -25,19 +25,17 @@ concept_blocks:
       classement.
     image: /images/uploads/copains.jpg
 options:
-  - description: Le week-end TGC Gone Wild, les 20 et 21 mai 2023
-    price: 70
-  - description: Parcours 90km, le samedi 9 septembre 2023 (soirée à l'Étape 84 en option)
-    price: 30
-  - description: Parcours 170km le dimanche 10 septembre 2023 (soirée à l'Étape 84
-      en option)
-    price: 30
-  - description: Le week-end complet, les 9 et 10 septembre 2023, avec soirée à l'Étape 84
-    price: 70
+  - description: Le week-end TGC Gone Wild, les 25 et 26 mai 2024
+    price: 60
+  - description: Parcours 90km, le samedi 7 septembre 2024 (soirée à l'Étape 84 en option)
+    price: 25
+  - description: Parcours 170km le samedi 7 septembre 2024 (soirée à l'Étape 84 en option)
+    price: 35
 basic_features:
   - Une trace GPS, dans l'esprit Gravel, bien "roulante". Un ou plusieurs
-    ravitaillements, selon le parcours. Des photographes et des belles
-    dotations. Le café et les croissants au départ, ainsi qu'une collation
-    d'arrivée à l'Étape 84, et plein d'autres surprises...
+    ravitaillements, selon le parcours.  Le café et les croissants au départ,
+    ainsi qu'une collation d'arrivée à l'Étape 84. Un tarif préférentiel pour
+    dormier à l'Étape 84. Le maillot spécial TGC par Piik (en option au moment
+    de l'inscription), et plein d'autres surprises...
 plus_features: []
 ---
