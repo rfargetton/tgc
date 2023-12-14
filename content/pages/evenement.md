@@ -33,16 +33,18 @@ options:
     price: 35
 basic_features:
   - "TGC Gone Wild : Une trace GPS, dans l'esprit Gravel, bien \"roulante\". Un
-    suivi \"en léger différé\". Un repas chaud sur le lieu de bivouac, avec
-    toutes les commodités.  Le café et les croissants au départ, ainsi qu'une
-    collation d'arrivée à l'Étape 84. Un tarif préférentiel pour dormir à
-    l'Étape 84. Le maillot spécial TGC par Piik (en option au moment de
-    l'inscription), et plein d'autres surprises..."
-  - "TGC \"classique\" : TGC Gone Wild : Une trace GPS, dans l'esprit Gravel,
-    bien \"roulante\". Un suivi \"en léger différé\". Un ou plusieurs
-    ravitaillements, selon le parcours.  Le café et les croissants au départ,
+    suivi \"en léger différé\". Un repas chaud sur le lieu de bivouac, ainsi
+    qu'un bon petit déj'. Douche possible.  Le café et les croissants au départ,
     ainsi qu'une collation d'arrivée à l'Étape 84. Un tarif préférentiel pour
-    dormir à l'Étape 84. Le maillot spécial TGC par Piik (en option au moment de
+    dormir à l'Étape 84. Possibilité de prendre une douche et de nettoyer son
+    vélo à l'arrivée. Local sécurisé. Le maillot spécial TGC par Piik (en option
+    au moment de l'inscription), et plein d'autres surprises..."
+  - "TGC \"classique\" : Une trace GPS, dans l'esprit Gravel, bien \"roulante\".
+    Un suivi \"en léger différé\". Un ou plusieurs ravitaillements, selon le
+    parcours.  Le café et les croissants au départ, ainsi qu'une collation
+    d'arrivée à l'Étape 84. Un tarif préférentiel pour dormir à l'Étape 84.
+    Possibilité de prendre une douche et de nettoyer son vélo à l'arrivée. Local
+    sécurisé. Le maillot spécial TGC par Piik (en option au moment de
     l'inscription), et plein d'autres surprises..."
 plus_features: []
 ---
