@@ -23,6 +23,10 @@ team:
     bio: Quand le ravito devient un art.
     image: /images/uploads/jp.jpg
 press:
+  - title: Wheelz!
+    publication: Wheelz!
+    link: https://weelz.ouest-france.fr/touraine-gravel-challenge-les-amateurs-de-velo-toute-route-se-rejoignent-a-tours-ce-weekend/
+    image: /images/uploads/capture-d-ecran-du-2023-12-14-10-40-42.png
   - title: Touraine Gravel Challenge ou comment salir un vélo tout neuf
     image: /images/uploads/gravel-touraine-challenge-mr4-07.jpg
     publication: Bike Café
@@ -39,8 +43,4 @@ press:
     publication: Blog des cycles Victoire
     title: Le Touraine Gravel Challenge 2
     image: /images/uploads/victoire_img_1817.jpg
-  - title: Wheelz!
-    publication: Wheelz!
-    link: https://weelz.ouest-france.fr/touraine-gravel-challenge-les-amateurs-de-velo-toute-route-se-rejoignent-a-tours-ce-weekend/
-    image: /images/uploads/capture-d-ecran-du-2023-12-14-10-40-42.png
 ---
