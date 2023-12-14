@@ -7,15 +7,15 @@ subheading: Le Touraine Gravel Challenge est une série d'épreuves de pur grave
   et de l’Indre.
 image: /images/uploads/hero-apropos.jpg
 team:
+  - name: Fabien
+    bio: Notre community manager et trace.
+    image: /images/uploads/fabien.jpg
   - name: Sylvain
     image: /images/uploads/sylvain.jpg
     bio: Notre maître zen et traceur en chef.
   - name: Guillaume
     bio: Notre aventurier à barbe des bacs à sable.
     image: /images/uploads/guillaume.jpg
-  - name: Fabien
-    bio: Notre community manager et trace.
-    image: /images/uploads/fabien.jpg
   - name: Marion
     bio: Notre œil de lynx, souvent cachée derrière son appareil.
     image: /images/uploads/marion2.png
