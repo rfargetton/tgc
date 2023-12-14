@@ -13,9 +13,6 @@ team:
   - name: Guillaume
     bio: Notre aventurier à barbe des bacs à sable.
     image: /images/uploads/guillaume.jpg
-  - name: Sébastien
-    bio: Notre consultant expert
-    image: /images/uploads/sebastien.jpg
   - name: Fabien
     bio: Notre community manager et trace.
     image: /images/uploads/fabien.jpg
