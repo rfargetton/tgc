@@ -32,10 +32,17 @@ options:
   - description: Parcours 170km le samedi 7 septembre 2024 (soirée à l'Étape 84 en option)
     price: 35
 basic_features:
-  - Une trace GPS, dans l'esprit Gravel, bien "roulante". Un ou plusieurs
+  - "TGC Gone Wild : Une trace GPS, dans l'esprit Gravel, bien \"roulante\". Un
+    suivi \"en léger différé\". Un repas chaud sur le lieu de bivouac, avec
+    toutes les commodités.  Le café et les croissants au départ, ainsi qu'une
+    collation d'arrivée à l'Étape 84. Un tarif préférentiel pour dormir à
+    l'Étape 84. Le maillot spécial TGC par Piik (en option au moment de
+    l'inscription), et plein d'autres surprises..."
+  - "TGC \"classique\" : TGC Gone Wild : Une trace GPS, dans l'esprit Gravel,
+    bien \"roulante\". Un suivi \"en léger différé\". Un ou plusieurs
     ravitaillements, selon le parcours.  Le café et les croissants au départ,
     ainsi qu'une collation d'arrivée à l'Étape 84. Un tarif préférentiel pour
-    dormier à l'Étape 84. Le maillot spécial TGC par Piik (en option au moment
-    de l'inscription), et plein d'autres surprises...
+    dormir à l'Étape 84. Le maillot spécial TGC par Piik (en option au moment de
+    l'inscription), et plein d'autres surprises..."
 plus_features: []
 ---
