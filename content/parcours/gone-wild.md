@@ -17,6 +17,6 @@ description: >-
   NOUVEAUTÉ : cette année, on te propose deux options : a) 350 km si tu veux découvrir le format sans te cramer, b) 400 km si tu en veux toujours plus !
 
 
-  Les inscriptions sont ouvertes. Attention ! Il n'y a que 70 places...
+  Inscriptions à partir du 15/01, 20H00. Attention ! Il n'y a que 70 places...
 link: https://www.klikego.com/inscription/touraine-gravel-challenge-gone-wild----3eme-edition-2024/cyclo/vtt/1591316274595-9
 ---
