@@ -6,9 +6,13 @@ location: Tours, France
 image: /images/uploads/dscf1709.jpg
 distance: 90
 elevation: 600
-description: C'est notre « petit » parcours, mais pas moins exigeante pour
-  autant ! Tu dois être capable de rouler de 4 à 6 heures sur un terrain roulant
-  mais avec quelques beaux petits raidars. Tu pourras découvrir le merveilleux
-  patrimoine de la Touraine tout au long du parcours.
-link: https://www.klikego.com/inscription/touraine-gravel-challenge--4-2023/cyclo/vtt/1591316274595-8
+description: >-
+  C'est notre « petit » parcours, mais pas moins exigeante pour autant ! Tu dois
+  être capable de rouler de 4 à 6 heures sur un terrain roulant mais avec
+  quelques beaux petits raidars. Tu pourras découvrir le merveilleux patrimoine
+  de la Touraine tout au long du parcours.
+
+
+  Les inscriptions sont ouvertes. Attention ! Il n'y a que 99 places au total...
+link: https://www.klikego.com/inscription/touraine-gravel-challenge--5-2024/cyclo/vtt/1591316274595-10
 ---
