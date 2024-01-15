@@ -13,6 +13,6 @@ description: >-
   de la Touraine tout au long du parcours.
 
 
-  Les inscriptions sont ouvertes. Attention ! Il n'y a que 99 places au total...
+  Inscriptions à partir du 15/01, 20H00. Attention ! Il n'y a que 99 places au total...
 link: https://www.klikego.com/inscription/touraine-gravel-challenge--5-2024/cyclo/vtt/1591316274595-10
 ---
