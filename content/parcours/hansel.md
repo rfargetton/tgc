@@ -14,6 +14,6 @@ description: >-
   bien "graveleux" ! 
 
 
-  COMPLET ! Il reste possible de s'inscrire sur sur liste d’attente, via la bourse aux dossards. 
+  COMPLET ! Il reste possible de s'inscrire sur liste d’attente, via la bourse aux dossards. 
 link: https://www.klikego.com/revente-dossard/touraine-gravel-challenge--5-2024/1591316274595-10
 ---
