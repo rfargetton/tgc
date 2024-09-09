@@ -7,21 +7,39 @@ subheading: Le Touraine Gravel Challenge est une série d'épreuves de pur grave
   et de l’Indre.
 image: /images/uploads/hero-apropos.jpg
 team:
+  - name: Clément
+    bio: " "
+    image: /images/uploads/clement.jpg
   - name: Fabien
-    bio: Notre homme-orchestre et inspirateur.
+    bio: " "
     image: /images/uploads/fabien.jpg
-  - name: Sylvain
-    image: /images/uploads/sylvain.jpg
-    bio: Notre maître zen et traceur en chef.
+  - name: Fabrice
+    bio: " "
+    image: /images/uploads/fabrice.jpg
   - name: Guillaume
-    bio: Notre aventurier, aussi à l'aise sur le gravier que sur les feuilles excel.
+    bio: " "
     image: /images/uploads/guillaume.jpg
-  - name: Marion
-    bio: Notre œil de lynx, souvent cachée derrière son appareil.
-    image: /images/uploads/marion2.png
   - name: Jean-Pierre
-    bio: Quand le ravito devient un art.
+    bio: " "
     image: /images/uploads/jp.jpg
+  - name: Mag
+    bio: " "
+    image: /images/uploads/mag.jpg
+  - name: Marion
+    bio: " "
+    image: /images/uploads/marion2.png
+  - name: Martin
+    bio: " "
+    image: /images/uploads/martin.jpg
+  - name: Stéphane
+    bio: " "
+    image: /images/uploads/stephane.jpg
+  - name: Sylvain
+    image: /images/uploads/sylvain2.jpg
+    bio: " "
+  - name: Yas
+    bio: " "
+    image: /images/uploads/yas2.jpg
 press:
   - title: Wheelz!
     publication: Wheelz!
